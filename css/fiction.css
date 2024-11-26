@@ -9,10 +9,11 @@ body {
   font-family: "Noto Sans", sans-serif;
 
   font-weight: 1000;
+}
+* {
   margin: 0;
   padding: 0;
 }
-
 header {
   align-items: center;
   background: linear-gradient(to right, #f6fac9, #000000);
@@ -43,17 +44,41 @@ h1 {
 
   margin-top: 4em;
   font-size: 3rem;
-  background: linear-gradient(to right, #f6fac9, #2a2a2a);
+  background: linear-gradient(to right, #f6fac9, #171717);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Rendre le texte transparent pour afficher le fond */
+  text-align: center;
+  -webkit-text-stroke: 1.5px black;
+}
+
+h2 {
+  background: linear-gradient(to right, #f6fac9, #8f8f8f);
+  -webkit-background-clip: text;
+  color: transparent;
+  padding-top: 1em;
+  margin-left: 30%;
+  margin-right: 30%;
+  font-size: 2em;
+  -webkit-text-stroke: 1px black;
+}
+
+h3 {
+  font-weight: 1000;
+
+  padding-top: 0.5em;
+  font-size: 3rem;
+  background: linear-gradient(to right, #f6fac9, #171717);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; /* Rendre le texte transparent pour afficher le fond */
   text-align: center;
   -webkit-text-stroke: 1.5px black;
 }
 .hero {
+  text-align: center;
   height: 100vh;
   background-image: url(../img/image-hero.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 .hero div {
   display: flex;
@@ -77,10 +102,8 @@ button {
   background: linear-gradient(to right, #f6fac9, #1a1a1a);
   font-size: 1.5em;
   margin-top: 2em;
-  margin-left: 40%;
   font-weight: 700;
   padding: 0.7em 3em 0.7em 3em;
-  width: 20%;
   border-radius: 30px;
   cursor: pointer;
   text-align: center;
@@ -89,8 +112,234 @@ button {
 button a {
   color: black;
 }
+
 .finsection {
   width: 100%;
-  height: 1em;
+  height: 0.7em;
   background: linear-gradient(to right, #f6fac9, #272727);
+}
+
+.avantages {
+  background-image: url(../img/interstallar.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.avantage1 {
+  margin-left: 7em;
+  text-align: center;
+  width: 80%;
+  margin-top: 3em;
+  justify-content: center;
+
+  margin-bottom: 5em;
+  display: flex;
+}
+.avantage1 img {
+  width: 85px;
+  margin-left: 5em;
+  height: 85px;
+}
+.avantage1 div {
+  align-items: center;
+  display: flex;
+}
+.avantage1 p {
+  margin-top: 1em;
+  margin-left: 1em;
+  width: 35vw;
+  background: linear-gradient(to right, #f6fac9, #8f8f8f);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 1000;
+  font-size: 1.5em;
+  -webkit-text-stroke: 1px black;
+}
+.manque {
+  padding: 0;
+  margin-top: -1em;
+}
+.avantages button {
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+.film {
+  background-image: url(../img/starwar-etoile.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.flex {
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+#film1 img {
+  width: 317px;
+  object-fit: cover;
+  height: 455px;
+}
+
+#film2 img {
+  width: 339px;
+  height: 455px;
+  object-fit: cover;
+}
+
+#film3 img {
+  width: 339px;
+  height: 455px;
+  object-fit: cover;
+}
+.carte-film {
+  background: linear-gradient(to right, #f6fac9, #8f8f8f);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+}
+#etoile {
+  width: 30% !important;
+  height: auto !important;
+}
+.abonnement {
+  background-image: url(../img/trounoir.jpg);
+  background-size: cover;
+}
+#les-offres {
+  padding-top: 2em;
+  display: flex;
+  justify-content: space-evenly;
+}
+.offre {
+  border-radius: 2em;
+  padding: 2em;
+  border: 1px solid black;
+
+  margin-bottom: 5em;
+  text-align: center;
+}
+h4 {
+  font-size: 2em;
+}
+#offre1 {
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: #000000 0 0 10px;
+}
+#offre2 {
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: #000000 0 0 10px;
+}
+#offre3 {
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: #000000 0 0 10px;
+}
+#offre1 h4 {
+  background: linear-gradient(to right, #d4d4d4, #fbbbbb);
+  -webkit-text-stroke: 1px black;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#offre1 p {
+  background: linear-gradient(to right, #bababa, #fbbbbb);
+  -webkit-background-clip: text;
+}
+#offre1 button {
+  background: linear-gradient(to right, #bababa, #fbbbbb);
+
+  font-size: 1em;
+  box-shadow: #000000 0 0 10px;
+}
+
+#offre2 h4 {
+  background: linear-gradient(to right, #bababa, #ffffff);
+  -webkit-text-stroke: 1px black;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#offre2 p {
+  background: linear-gradient(to right, #bababa, #ffffff);
+  -webkit-background-clip: text;
+}
+
+#offre2 button {
+  background: linear-gradient(to right, #bababa, #ffffff);
+  box-shadow: #000000 0 0 10px;
+  font-size: 1em;
+}
+#offre3 h4 {
+  background: linear-gradient(to right, #bababa, #d2dba5);
+  -webkit-text-stroke: 1px black;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#offre3 p {
+  background: linear-gradient(to right, #bababa, #d2dba5);
+  -webkit-background-clip: text;
+}
+
+#offre3 button {
+  background: linear-gradient(to right, #bababa, #d2dba5);
+  box-shadow: #000000 0 0 10px;
+  font-size: 1em;
+}
+
+.offre p {
+  -webkit-text-stroke: 1px black;
+  color: transparent;
+  margin-top: 3em;
+  font-size: 1.4em;
+  font-weight: 800;
+}
+.aviis {
+  margin-bottom: 1em;
+  font-size: 3em;
+  background: linear-gradient(to right, #ffffff, #b5c17a);
+  -webkit-text-stroke: 1px black;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  color: transparent !important;
+}
+.avis {
+  background-image: url(../img/theboys.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 50vw;
+  text-align: center;
+}
+#client {
+  padding-top: 2em;
+}
+.avisclient {
+  color: white;
+  margin-bottom: 5em;
+  margin-left: 10%;
+  padding-bottom: 1em;
+  margin-right: 10%;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px); /* Effet de flou */
+}
+.avisclient h4 {
+  margin-bottom: 1em;
+}
+.avisclient p {
+  margin-left: 5%;
+  margin-right: 5%;
+  font-weight: 300;
+  margin-bottom: 0.5em;
+}
+#client h4 {
+  color: white;
+  -webkit-text-stroke: 1px black;
+}
+.genres {
+  background-image: url(../img/matrix.png);
 }
