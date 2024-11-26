@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Parkinsans:wght@300..800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.logo-navbar {
+    width: 4rem;
+}
+
+.navbar-color {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(320deg, rgba(2, 0, 36, 1) 0%, rgba(184, 0, 0, 1) 52%);
+}
+
+.width80 p {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+.bg-horror {
+    background-image: url(../img/bg-blur-fixe-horreur.jpg);
+    width: 100%;
+}
+
+h1 {
+    font-size: 5rem;
+    color: #B80000;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+h2 {
+    color: #B80000;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+p {
+    font-family: "Parkinsans", sans-serif;
+}
