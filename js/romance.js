@@ -9,3 +9,10 @@ var swiper = new Swiper(".default-carousel", {
         prevEl: ".swiper-button-prev",
     },
 });
+const filmCards = document.querySelectorAll('.film-card');
+
+filmCards.forEach(card => {
+    card.addEventListener('click', () => {
+        alert(`Vous avez choisi : ${card.textContent}`);
+    });
+});

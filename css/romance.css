@@ -3,8 +3,27 @@
     padding: 0;
     box-sizing: border-box;
 }
+.header_romance{
+    display: flex;
+    justify-content: space-between;
+    background-color: deeppink;
+    max-height: 70px;
+}
+.romance_nav{
+    margin-right: 15%;
+    display: flex;
+    margin-left: 3rem;
+    justify-content: center;
+}
+.nOv_romance:hover{
+  margin-right: 0 10%;
+    transform: scale(1.2);
+background-color: darkgoldenrod;
+    color: indigo;
+}
+
 .romance_main{
-    background-color: rgba(255, 255, 255, 0.5);
+  background-color: indigo;
 }
 .swiper-wrapper {
     width: 100%;
@@ -47,5 +66,71 @@ color: rosybrown;
     color: deeppink;
     max-width: 100%;
     text-align: center;
-    margin: 25% 25%;
+    margin: 2% 25% 0 25%;
+}
+
+#moments-a-deux {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#moments-a-deux h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #e63946;
+}
+@media (max-width: 768px) {
+    .film-card {
+        width: 100%;
+    }
+
+    .films {
+        flex-direction: column;
+    }
+}
+
+.categorie {
+    margin-top: 30px;
+}
+
+.categorie h2 {
+    color: #e63946;
+    font-size: 1.8rem;
+}
+
+.categorie p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.films {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.film-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0% 10%;
+    width: calc(33.333% - 10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+}
+
+.film-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.romance_bonus{
+    color: deeppink;
+}
+.romance_video{
+    margin-left: 0.1%;
+    border-radius: 10%;
 }

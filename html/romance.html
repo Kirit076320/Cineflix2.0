@@ -33,9 +33,17 @@
 <body class="font-sans">
 <!-- ... (previous header code remains unchanged) ... -->
 <!--header-->
-
+<div class="header_romance">
+  <div class="romance_logo"><a href="./index.html"><img src="../img/logo-cineflix.png"></a></div>
+  <div class="romance_link">
+    <ul class="romance_nav">
+      <li class="nav_romance"><a class="nOv_romance" href="#Romance_Car">Films</a></li>
+        <li class="nav_romance"><a class="nOv_romance" href="#Abonnement">Abonnements</a></li>
+    </ul>
+  </div>
+</div>
 <!--fin header-->
-<main class="pt-16 romance_main">
+<main class="romance_main">
   <!-- Hero Section -->
   <section class="relative bg-gradient-to-br from-blue-900 to-indigo-800 text-white overflow-hidden">
     <div class="absolute inset-0 bg-black opacity-50"></div>
@@ -46,7 +54,7 @@
         <!-- Left Side: Company Info -->
         <div class="w-full md:w-1/2 mb-12 md:mb-0">
           <h1 id="haut" class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-            L'Amour.<br>Avec un  A.<br>C'est Quoi?
+            L'Amour.<br>avec un  A.<br>C'est quoi?
           </h1>
           <p class="text-xl mb-8 text-gray-300">Cinéflix vous montre ce que cela représente.</p>
           <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
@@ -88,14 +96,14 @@
 <!--Fin hero section-->
   <h3 class="texte_romance-pop">Films Populaires:</h3>
 <!--  Début section film-->
-  <div id="Romance_car" class="w-full relative romance_margin">
+  <div id="Romance_Car" class="w-full relative romance_margin">
     <div class="swiper default-carousel swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
             <div class="flex justify-center">
               <a href="#!">
-                <video width="300" height="100" controls class="w-full rounded-t-lg">
+                <video class="romance_video" width="300" height="100" controls class="w-full rounded-t-lg">
                   <source src="../video/amour_ouf.mp4" type="video/mp4">
                   <source src="movie.ogg" type="video/ogg">
                   Your browser does not support the video tag.
@@ -115,7 +123,7 @@
           <div class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
             <div class="flex justify-center">
               <a href="#!">
-                <video width="300" height="100" controls class="w-full rounded-t-lg">
+                <video class="romance_video" width="300" height="100" controls class="w-full rounded-t-lg">
                   <source src="../video/coeurs_meurtries.mp4" type="video/mp4">
                   <source src="movie.ogg" type="video/ogg">
                   Your browser does not support the video tag.
@@ -135,7 +143,7 @@
           <div class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
             <div class="flex justify-center">
               <a href="#!">
-                <video width="300" height="100" controls class="w-full rounded-t-lg">
+                <video class="romance_video" width="300" height="100" controls class="w-full rounded-t-lg">
                   <source src="../video/titanic.mp4" type="video/mp4">
                   <source src="movie.ogg" type="video/ogg">
                   Your browser does not support the video tag.
@@ -257,11 +265,10 @@
       <div class="grid gap-6 mt-16 -mx-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
         <div
                 class="px-6 py-4 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border border-opacity-20 duration-200 transform rounded-lg">
-          <p class="text-lg font-medium text-white dark:text-gray-100">Intro</p>
-          <h4 class="mt-2 text-4xl font-semibold text-white dark:text-gray-100">$19
-            <span class="text-base font-normal text-gray-600 dark:text-gray-400">/ Month</span></h4>
-          <p class="mt-4 text-white dark:text-gray-300">For most businesses that want to optimaize web
-            queries.</p>
+          <p class="text-lg font-medium text-white dark:text-gray-100"></p>
+          <h4 class="mt-2 text-4xl font-semibold text-white dark:text-gray-100">9.99€
+            <span class="text-base font-normal text-gray-600 dark:text-gray-400">/ Mois</span></h4>
+          <p class="mt-4 text-white dark:text-gray-300">Abonnement de test pour les personnes septique de notre qualite</p>
 
           <div class="mt-8 space-y-8">
             <div class="flex items-center">
@@ -272,7 +279,7 @@
                       clip-rule="evenodd" />
               </svg>
 
-              <span class="mx-4 text-gray-400 dark:text-gray-300">All limited links</span>
+              <span class="mx-4 text-gray-400 dark:text-gray-300">10% du catalogue</span>
             </div>
 
             <div class="flex items-center">
@@ -283,7 +290,7 @@
                       clip-rule="evenodd" />
               </svg>
 
-              <span class="mx-4 text-gray-400 dark:text-gray-300">Own analytics platform</span>
+              <span class="mx-4 text-gray-400 dark:text-gray-300">10% répartis selon vos choix</span>
             </div>
 
             <div class="flex items-center">
@@ -294,9 +301,8 @@
                       clip-rule="evenodd" />
               </svg>
 
-              <span class="mx-4 text-gray-400 dark:text-gray-300">Chat support</span>
+              <span class="mx-4 text-gray-400 dark:text-gray-300">Support client 24/5</span>
             </div>
-
             <div class="flex items-center">
               <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500"
                    viewBox="0 0 20 20" fill="currentColor">
@@ -305,30 +311,19 @@
                       clip-rule="evenodd" />
               </svg>
 
-              <span class="mx-4 text-gray-400 dark:text-gray-300">Optimize hashtags</span>
-            </div>
-
-            <div class="flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500"
-                   viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                      clip-rule="evenodd" />
-              </svg>
-
-              <span class="mx-4 text-gray-400 dark:text-gray-300">Unlimited users</span>
+              <span class="mx-4 text-gray-400 dark:text-gray-300">2 utilisateurs</span>
             </div>
           </div>
 
-          <button class="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Choose plan</button>
+          <button class="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">S'abonner</button>
         </div>
 
         <div
                 class="px-6 mb-4 -mt-3.5 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border border-opacity-20 duration-200 transform rounded-lg">
-          <p class="text-lg font-medium text-gray-100">Popular</p>
-          <h4 class="mt-2 text-4xl font-semibold text-gray-100">$99
-            <span class="text-base font-normal text-gray-400">/ Month</span></h4>
-          <p class="mt-4 text-gray-300">For most businesses that want to optimaize web queries.</p>
+          <p class="text-lg font-medium text-gray-100">Populaire</p>
+          <h4 class="mt-2 text-4xl font-semibold text-gray-100">49.99€
+            <span class="text-base font-normal text-gray-400">/ Mois</span></h4>
+          <p class="mt-4 text-gray-300">L'abonnement complet a moindre prix</p>
 
           <div class="mt-8 space-y-8">
             <div class="flex items-center">
@@ -339,7 +334,7 @@
                       clip-rule="evenodd" />
               </svg>
 
-              <span class="mx-4 text-gray-300">All limited links</span>
+              <span class="mx-4 text-gray-300">100% du catalogue</span>
             </div>
 
             <div class="flex items-center">
@@ -361,9 +356,8 @@
                       clip-rule="evenodd" />
               </svg>
 
-              <span class="mx-4 text-gray-300">Chat support</span>
+              <span class="mx-4 text-gray-300">Support 24/7</span>
             </div>
-
             <div class="flex items-center">
               <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500"
                    viewBox="0 0 20 20" fill="currentColor">
@@ -372,18 +366,7 @@
                       clip-rule="evenodd" />
               </svg>
 
-              <span class="mx-4 text-gray-300">Optimize hashtags</span>
-            </div>
-
-            <div class="flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500"
-                   viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                      clip-rule="evenodd" />
-              </svg>
-
-              <span class="mx-4 text-gray-300">Unlimited users</span>
+              <span class="mx-4 text-gray-300">2 écrans simultanés </span>
             </div>
           </div>
 
@@ -392,11 +375,10 @@
 
         <div
                 class="px-6 py-4 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border border-opacity-20 duration-200 transform rounded-lg">
-          <p class="text-lg font-medium text-white dark:text-gray-100">Exterprise</p>
-          <h4 class="mt-2 text-4xl font-semibold text-white dark:text-gray-100">$199
-            <span class="text-base font-normal text-gray-600 dark:text-gray-400">/ Month</span></h4>
-          <p class="mt-4 text-white dark:text-gray-300">For most businesses that want to optimaize web
-            queries.</p>
+          <p class="text-lg font-medium text-white dark:text-gray-100">Famille</p>
+          <h4 class="mt-2 text-4xl font-semibold text-white dark:text-gray-100">74.99€
+            <span class="text-base font-normal text-gray-600 dark:text-gray-400">/ Mois</span></h4>
+          <p class="mt-4 text-white dark:text-gray-300">Format famillial pour profiter du meilleur catalogue</p>
 
           <div class="mt-8 space-y-8">
             <div class="flex items-center">
@@ -407,7 +389,7 @@
                       clip-rule="evenodd" />
               </svg>
 
-              <span class="mx-4 text-gray-400 dark:text-gray-300">All limited links</span>
+              <span class="mx-4 text-gray-400 dark:text-gray-300">100% du catalogur</span>
             </div>
 
             <div class="flex items-center">
@@ -418,7 +400,7 @@
                       clip-rule="evenodd" />
               </svg>
 
-              <span class="mx-4 text-gray-400 dark:text-gray-300">Own analytics platform</span>
+              <span class="mx-4 text-gray-400 dark:text-gray-300">catalogue futur deja compris</span>
             </div>
 
             <div class="flex items-center">
@@ -429,7 +411,7 @@
                       clip-rule="evenodd" />
               </svg>
 
-              <span class="mx-4 text-gray-400 dark:text-gray-300">Chat support</span>
+              <span class="mx-4 text-gray-400 dark:text-gray-300">Support 24/7</span>
             </div>
 
             <div class="flex items-center">
@@ -440,18 +422,7 @@
                       clip-rule="evenodd" />
               </svg>
 
-              <span class="mx-4 text-gray-400 dark:text-gray-300">Optimize hashtags</span>
-            </div>
-
-            <div class="flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500"
-                   viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                      clip-rule="evenodd" />
-              </svg>
-
-              <span class="mx-4 text-gray-400 dark:text-gray-300">Unlimited users</span>
+              <span class="mx-4 text-gray-400 dark:text-gray-300">4 utilisateurs et 4 ecrans simultanés</span>
             </div>
           </div>
 
@@ -479,9 +450,9 @@
               </div>
               <div class="flex space-x-2 bg-gray-50 dark:bg-gray-900/60 dark:text-gray-200 px-6 pt-6 pb-5 rounded-b-xl">
                 <div class="flex flex-col justify-center">
-                  <p class="heading-six m-0">La Comédie</p>
+                  <p class="heading-six m-0">Comédie</p>
                   <a class="mt-8 inline-flex items-center justify-center rounded-xl bg-green-600 py-3 px-6 font-dm text-base font-medium text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.02]"
-                     href="">
+                     href="comedie.html">
                     En savoir plus
                   </a>
                 </div>
@@ -645,6 +616,69 @@
     </div>
   </div>
 <!--  Fin section catégories-->
+<!--  section bonus-->
+  <section id="moments-a-deux">
+    <h2 class="romance_bonus">Moments à Deux</h2>
+    <p class="text-pink-600 dark:text-black-400">Plongez dans un univers où l’amour prend vie à travers des histoires passionnantes, drôles ou déchirantes.</p>
+
+    <div class="categorie">
+      <h3 class="romance_bonus">Amours éternels</h3>
+      <div class="films">
+        <div class="film-card"><img src="../img/titanic.jpg" alt="titanic"></div>
+        <div class="film-card"><img src="../img/orgueil.jpg" alt="orgueil"></div>
+        <div class="film-card"><img src="../img/nothing.jpg" alt="nothing"></div>
+      </div>
+    </div>
+
+    <div class="categorie">
+      <h3 class="romance_bonus">Rencontres improbables</h3>
+      <div class="films">
+        <div class="film-card"><img src="../img/500days.jpg" alt="500days"></div>
+        <div class="film-card"><img src="../img/patient.jpg" alt="patient"></div>
+        <div class="film-card"><img src="../img/loveactually.jpg" alt="loveactually"></div>
+      </div>
+    </div>
+  </section>
+  <!--  fin section bonus-->
+<!--  Formulaire-->
+  <div class="flex justify-center mt-20 px-8">
+    <form class="max-w-2xl">
+      <div class="flex flex-wrap border shadow rounded-lg p-3 dark:bg-gray-600">
+        <h2 class="text-xl text-pink-600 dark:text-gray-300 pb-2">Account settings:</h2>
+
+        <div class="flex flex-col gap-2 w-full border-gray-400">
+
+          <div>
+            <label class="text-pink-600 dark:text-black-400">Pseudo
+            </label>
+            <input required
+                    class="w-full py-3 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow dark:bg-gray-600 dark:text-gray-100"
+                    type="text">
+          </div>
+
+          <div>
+            <label class="text-pink-600 dark:text-black-400 ">Email</label>
+            <input  required
+                    class="w-full py-3 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow dark:bg-gray-600 dark:text-gray-100"
+                    type="text">
+          </div>
+
+          <div>
+            <label class="text-pink-600 dark:text-black-400">Commentaire</label>
+            <textarea
+                    class="w-full py-3 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow dark:bg-gray-600 dark:text-gray-100"
+                    name="bio"></textarea>
+          </div>
+          <div class="flex justify-end">
+            <button
+                    class="py-1.5 px-3 m-1 text-center bg-violet-700 border rounded-md text-white  hover:bg-violet-500 hover:text-gray-100 dark:text-gray-200 dark:bg-violet-700"
+                    type="submit">Envoyer</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+<!--  Fin Formulaire-->
   <!-- ... (rest of your main content) ... -->
 </main>
 <!-- ... (previous script remains unchanged) ... -->
