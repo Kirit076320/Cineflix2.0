@@ -24,28 +24,28 @@
 max-width: 50%;
 }
 .comedie_bgMP{
-    background-color: darkgoldenrod;
+    color: rosybrown;
 }
-.comedie_MP{
-color: rosybrown;
-}
+
 .romance_bgMP{
-    background-color: darkgoldenrod;
    color: rosybrown;
 }
 .horreur_bgMP{
-    background-color: darkgoldenrod;
 color: rosybrown;
 }
 .action_bgMP{
-    background-color: darkgoldenrod;
  color: rosybrown;
 }
 .fantastique_bgMP{
-
  color: rosybrown;
 }
 .animation_bgMP{
-
-    background-color: darkgoldenrod;
+    color: rosybrown;
+}
+.texte_romance-pop{
+    font-size: 2em;
+    color: deeppink;
+    max-width: 100%;
+    text-align: center;
+    margin: 25% 25%;
 }

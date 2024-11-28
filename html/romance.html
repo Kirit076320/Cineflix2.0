@@ -45,7 +45,7 @@
       <div class="flex flex-col md:flex-row items-center justify-between">
         <!-- Left Side: Company Info -->
         <div class="w-full md:w-1/2 mb-12 md:mb-0">
-          <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+          <h1 id="haut" class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
             L'Amour.<br>Avec un  A.<br>C'est Quoi?
           </h1>
           <p class="text-xl mb-8 text-gray-300">Cinéflix vous montre ce que cela représente.</p>
@@ -86,8 +86,9 @@
     </div>
   </section>
 <!--Fin hero section-->
+  <h3 class="texte_romance-pop">Films Populaires:</h3>
 <!--  Début section film-->
-  <div class="w-full relative romance_margin">
+  <div id="Romance_car" class="w-full relative romance_margin">
     <div class="swiper default-carousel swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -181,7 +182,7 @@
                   <path d="M24 7.3h-5.1L22.3.4H17l-3.4 6.9v10.3H24V7.3zM10.3 17.6V7.3H5L8.6.4H3.4L0 7.3v10.3h10.3z"
                         fill="current"></path>
                 </svg>
-                <p class="body-medium m-0 dark:text-gray-200" style="hyphens:auto">Un amateur de romance comme moi aime beaucoup le catalogue proposer par cinéflix et l'abonnement Premuim</p>
+                <p class="body-medium m-0 dark:text-gray-200" style="hyphens:auto">Super site de streaming ! Catalogue varié, qualité top, et navigation fluide. Possibilité de téléchargement, parfait pour les déplacements. Je recommande !</p>
               </div>
               <div class="flex space-x-2 bg-gray-50 dark:bg-gray-900/60 dark:text-gray-200 px-6 pt-6 pb-5 rounded-b-xl">
                 <div class="flex flex-col justify-center">
@@ -201,12 +202,12 @@
                   <path d="M24 7.3h-5.1L22.3.4H17l-3.4 6.9v10.3H24V7.3zM10.3 17.6V7.3H5L8.6.4H3.4L0 7.3v10.3h10.3z"
                         fill="current"></path>
                 </svg>
-                <p class="body-medium m-0 dark:text-gray-200" style="hyphens:auto">Un amateur de romance comme moi aime beaucoup le catalogue proposer par cinéflix et l'abonnement Premuim</p>
+                <p class="body-medium m-0 dark:text-gray-200" style="hyphens:auto">
+                  This website is perfect for international use; it has a language-switching feature!</p>
               </div>
               <div class="flex space-x-2 bg-gray-50 dark:bg-gray-900/60 dark:text-gray-200 px-6 pt-6 pb-5 rounded-b-xl">
                 <div class="flex flex-col justify-center">
                   <p class="heading-six m-0">Anthony Walker</p>
-                  <p class="body-small m-0 mt-1">@_webarchitect_</p>
                 </div>
               </div>
             </div>
@@ -227,7 +228,6 @@
               <div class="flex space-x-2 bg-gray-50 dark:bg-gray-900/60 dark:text-gray-200 px-6 pt-6 pb-5 rounded-b-xl">
                 <div class="flex flex-col justify-center">
                   <p class="heading-six m-0">Martin Matin</p>
-                  <p class="body-small m-0 mt-1">@N0ova_Matin</p>
                 </div>
               </div>
             </div>
@@ -481,8 +481,8 @@
                 <div class="flex flex-col justify-center">
                   <p class="heading-six m-0">La Comédie</p>
                   <a class="mt-8 inline-flex items-center justify-center rounded-xl bg-green-600 py-3 px-6 font-dm text-base font-medium text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.02]"
-                     href="#">
-                    Sign up for free
+                     href="">
+                    En savoir plus
                   </a>
                 </div>
               </div>
@@ -505,8 +505,8 @@
                 <div class="flex flex-col justify-center">
                   <p class="heading-six m-0">Fantastique</p>
                   <a class="mt-8 inline-flex items-center justify-center rounded-xl bg-green-600 py-3 px-6 font-dm text-base font-medium text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.02]"
-                     href="#">
-                    Sign up for free
+                     href="fantastique.html">
+                    En savoir plus
                   </a>
                 </div>
               </div>
@@ -529,8 +529,8 @@
                 <div class="flex flex-col justify-center">
                   <p class="heading-six m-0">Action</p>
                   <a class="mt-8 inline-flex items-center justify-center rounded-xl bg-green-600 py-3 px-6 font-dm text-base font-medium text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.02]"
-                     href="#">
-                    Sign up for free
+                     href="action.html">
+                    En savoir plus
                   </a>
                 </div>
               </div>
@@ -572,8 +572,8 @@
                 <div class="flex flex-col justify-center">
                   <p class="heading-six m-0">Horreur</p>
                   <a class="mt-8 inline-flex items-center justify-center rounded-xl bg-green-600 py-3 px-6 font-dm text-base font-medium text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.02]"
-                     href="#">
-                    Sign up for free
+                     href="horreur.html">
+                    En savoir plus
                   </a>
                 </div>
               </div>
@@ -583,7 +583,7 @@
         <div class="swiper-slide">
           <div class=" rounded-2xl h-96 flex justify-center items-center">
             <div style="box-shadow:0px 2px 4px rgba(0, 0, 0, 0.06), 0px 4px 6px rgba(0, 0, 0, 0.1)"
-                 class="flex flex-col max-w-md align-center justify-between border border-solid border-gray-200 bg-gray-800 rounded-xl comedie_bgMP">
+                 class="flex flex-col max-w-md align-center justify-between border border-solid border-gray-200 bg-gray-800 rounded-xl animation_bgMP">
               <div class="flex flex-col px-6 pt-8 mb-10 space-y-5">
                 <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg"
                      class="text-gray-A400 dark:text-gray-600 fill-current">
@@ -596,7 +596,7 @@
                 <div class="flex flex-col justify-center">
                   <p class="heading-six m-0">Animation</p>
                   <a class="mt-8 inline-flex items-center justify-center rounded-xl bg-green-600 py-3 px-6 font-dm text-base font-medium text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.02]"
-                     href="#">
+                     href="anime.html">
                     En savoir plus
                   </a>
                 </div>
@@ -620,8 +620,8 @@
                 <div class="flex flex-col justify-center">
                   <p class="heading-six m-0">Romance <span>(ICI)</span></p>
                   <a class="mt-8 inline-flex items-center justify-center rounded-xl bg-green-600 py-3 px-6 font-dm text-base font-medium text-white shadow-xl shadow-green-400/75 transition-transform duration-200 ease-in-out hover:scale-[1.02]"
-                     href="#">
-                    Sign up for free
+                     href="#haut">
+                    En savoir plus
                   </a>
                 </div>
               </div>
