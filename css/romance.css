@@ -23,12 +23,29 @@
 .romance_textemp{
 max-width: 50%;
 }
-.action_categorie{
-    background-image: url("../img/action_categorie.jpg");
+.comedie_bgMP{
+    background-color: darkgoldenrod;
 }
-.fantastique_categorie{
-    background-image: url("../img/fantastique_categorie.jpg");
+.comedie_MP{
+color: rosybrown;
 }
-.comedie_categorie{
-    background-image: url("../img/comedie-categorie.jpg") ;
+.romance_bgMP{
+    background-color: darkgoldenrod;
+   color: rosybrown;
+}
+.horreur_bgMP{
+    background-color: darkgoldenrod;
+color: rosybrown;
+}
+.action_bgMP{
+    background-color: darkgoldenrod;
+ color: rosybrown;
+}
+.fantastique_bgMP{
+
+ color: rosybrown;
+}
+.animation_bgMP{
+
+    background-color: darkgoldenrod;
 }
