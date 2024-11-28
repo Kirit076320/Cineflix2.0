@@ -111,6 +111,113 @@ p {
 }
 
 /*Fin prix abonnement*/
+
+/* débutCatégories */
+/* Cards Background Images */
+.bg-romance {
+    background-image: url('../img/genres-romance.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 250px;
+}
+
+.bg-action {
+    background-image: url('../img/genres-raiden.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 250px;
+}
+
+.bg-fantastique {
+    background-image: url('../img/genres-fantastique.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 250px;
+}
+
+.bg-comedie {
+    background-image: url('../img/genres-comedie.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 250px;
+}
+
+.bg-science {
+    background-image: url('../img/genres-sci.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 250px;
+}
+
+.romance p {
+    color: #FFFFFF;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+}
+.romance h3 {
+    color: #FFFFFF;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+}
+
+.anime p {
+    color: #FFFFFF;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #000000 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+}
+.anime h3 {
+    color: #FFFFFF;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #000000 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+}
+
+.fantastique p {
+    color: #FFFFFF;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #000000 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+}
+.fantastique h3 {
+    color: #FFFFFF;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #000000 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+}
+
+.comedie p {
+    color: #FFFFFF;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #000000 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+}
+.comedie h3 {
+    color: #FFFFFF;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #000000 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+}
+
+.science-fiction p {
+    color: #FFFFFF;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #000000 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+}
+.science-fiction h3 {
+    color: #FFFFFF;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #000000 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 1.5rem;
+}
+
+.display-none {
+    display: none;
+}
+
+.btn-danger {
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#genresMenu {
+    display: none;
+}
+
+
+/*fin Catégories */
 /*début testimoniaux*/
 .testimoniaux p {
     color: #000000;
@@ -198,4 +305,85 @@ p {
     background-color: #000040;
     border-radius: 30px;
     border: 5px solid #b800ff;
+}
+
+/*fin bénefs */
+/*début section article*/
+.section-article {
+    color: #B80000;
+}
+
+/*fin section articles*/
+@media (max-width: 575.98px) {
+    .taille-icon {
+        font-size: 2rem;
+    }
+
+    .display-none {
+        display: block
+    }
+
+    .width80 p {
+        font-size: 1.2rem;
+        margin-bottom: 5rem
+    }
+
+    .bouton-principal {
+        margin-bottom: 20px
+    }
+
+    .margin-mobile {
+        margin-top: 10rem
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .width100 p, .width100 h5 {
+        display: none;
+    }
+
+    .pricing-taille {
+        margin: 10px
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+}
+
+/*footer*/
+
+
+@media (max-width: 768px) {
+    .taille-icon {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .pricing-taille {
+        margin: 10px
+    }
+}
+
+@media (max-width: 1199.98px) {
+    ...
+}
+
+@media (max-width: 1399.98px) {
+    ...
+}
+
+@media (min-width: 768px) {
+    #genresMenu {
+        display: flex !important;
+
+    }
 }

@@ -17,7 +17,7 @@
     <link href="../css/horreur.css" rel="stylesheet">
 </head>
 
-<body class="h-100 text-center text-bg-dark">
+<body class="text-center text-bg-dark">
 <!--Header bootstrap 5.3-->
 <div class="d-flex flex-column w-100 h-100">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3 navbar-color ">
@@ -32,22 +32,22 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link mx-2 active" aria-current="page" href="#">Avantages</a>
+                        <a class="nav-link mx-2 active" aria-current="page" href="#avantages">Avantages</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" href="#">Films</a>
+                        <a class="nav-link mx-2" href="#films">Films</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" href="#">Catégories</a>
+                        <a class="nav-link mx-2" href="#categories">Catégories</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" href="#">Abonnements</a>
+                        <a class="nav-link mx-2" href="#abonnement">Abonnements</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" href="#">Avis</a>
+                        <a class="nav-link mx-2" href="#avis">Avis</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" href="#">Articles</a>
+                        <a class="nav-link mx-2" href="#articles">Articles</a>
                     </li>
                 </ul>
             </div>
@@ -62,14 +62,16 @@
             quas vero! Alias architecto, autem commodi dolore itaque laborum non perspiciatis quae vero. Adipisci,
             asperiores earum.</p>
         <p class="lead">
-            <a href="#" class="btn btn-lg btn-light mt-5 fw-bold border-white bg-white">Je m'abonne !</a>
+            <a href="#abonnement" class="btn btn-lg bouton-principal btn-light mt-5 fw-bold border-white bg-white">Je
+                m'abonne
+                !</a>
         </p>
     </section>
 </div>
 <!--fin main hero section-->
 <!--début section avantages-->
-<section class="justify-content-center align-items-center width80 text-center mt-5">
-    <h2 class="mb-5">Avantages</h2>
+<section id="avantages" class="justify-content-center align-items-center width80 text-center mt-5">
+    <h2 class="mb-5 margin-mobile">Avantages</h2>
     <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur culpa, fugiat nisi odio
         quas vero! Alias architecto, autem commodi dolore itaque laborum non perspiciatis quae vero. Adipisci,
         asperiores earum.</p>
@@ -89,7 +91,7 @@
 </section>
 <!--fin section avantages-->
 <!--début films vedette-->
-<div class="carousel slide mt-5 width100 position-relative" id="carouselExampleCaptions">
+<div id="films" class="carousel slide mt-5 width100 position-relative" id="carouselExampleCaptions">
     <div class="carousel-indicators">
         <button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0"
                 data-bs-target="#carouselExampleCaptions" type="button"></button>
@@ -112,7 +114,9 @@
                     cher...</p>
 
                 <div class="cta">
-                    <button class="btn btn-warning" type="button">Je m'abonne !</button>
+                    <a href="#abonnement">
+                        <button class="btn btn-warning bouton-carousel" type="button">Je m'abonne !</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -124,7 +128,9 @@
                 <p>Cecilia, une jeune religieuse américaine, sent la présence d'un être...</p>
 
                 <div class="cta">
-                    <button class="btn btn-warning" type="button">Je m'abonne !</button>
+                    <a href="#abonnement">
+                        <button class="btn btn-warning bouton-carousel" type="button">Je m'abonne !</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -137,7 +143,9 @@
                     brutalité dans une petite commune des Vosges.</p>
 
                 <div class="cta">
-                    <button class="btn btn-warning" type="button">Je m'abonne !</button>
+                    <a href="#abonnement">
+                        <button class="btn btn-warning bouton-carousel" type="button">Je m'abonne !</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -152,7 +160,9 @@
                     célébrité.</p>
 
                 <div class="cta">
-                    <button class="btn btn-warning" type="button">Je m'abonne !</button>
+                    <a href="#abonnement">
+                        <button class="btn btn-warning bouton-carousel" type="button">Je m'abonne !</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -166,7 +176,9 @@
                     maladie dégénérative.</p>
 
                 <div class="cta">
-                    <button class="btn btn-warning" type="button">Je m'abonne !</button>
+                    <a href="#abonnement">
+                        <button class="btn btn-warning bouton-carousel" type="button">Je m'abonne !</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -189,11 +201,11 @@
 </div>
 <!--fin films vedette-->
 <!--début section abonnement-->
-<section class="abonnement-taille mt-5">
-    <h2 class="mb-5 text-start">Abonnement</h2>
-    <div class="row row-cols-1 row-cols-sm-3 ">
+<section id="abonnement" class="abonnement-taille mt-5">
+    <h2 class="mb-5 text-center">Abonnement</h2>
+    <div class="row row-cols-1 row-cols-sm-3 row-cols-md-1 row-cols-lg-3 g-4">
         <!-- Plan Essentiel -->
-        <div class="col">
+        <div class="col pricing-taille">
             <div class="card h-100 pricing-card shadow-sm">
                 <div class="card-body p-5">
                     <h5 class="card-title text-muted text-uppercase mb-4">Essentiel</h5>
@@ -205,13 +217,13 @@
                         <li><i class="bi bi-check2 text-primary me-2"></i>✅ Qualité HD</li>
                         <li><i class="bi bi-check2 text-primary me-2"></i>✅ Regardez sur 1 écran à la foi</li>
                     </ul>
-                    <button class="btn btn-outline-primary btn-lg w-100 mt-4">Je m'abonne !</button>
+                    <a href="troll.html"><button class="btn btn-outline-primary btn-lg w-100 mt-4">Je m'abonne !</button></a>
                 </div>
             </div>
         </div>
 
         <!-- Plan Standard -->
-        <div class="col">
+        <div class="col pricing-taille">
             <div class="card h-100 pricing-card shadow position-relative">
                 <span class="badge gradient-custom text-white popular-badge px-4 py-2">Populaire</span>
                 <div class="card-body p-5">
@@ -222,17 +234,17 @@
                         <li><i class="bi bi-check2 text-primary me-2"></i>🌟 Qualité Full HD</li>
                         <li><i class="bi bi-check2 text-primary me-2"></i>🌟 Visionnage simultané sur 2 écrans</li>
                     </ul>
-                    <button class="btn gradient-custom text-white btn-lg w-100 hover-bouton mt-4">Je m'abonne !</button>
+                    <a href="troll.html"><button class="btn btn-outline-primary btn-lg w-100 mt-4">Je m'abonne !</button></a>
                 </div>
             </div>
         </div>
 
         <!-- Plan Premium -->
-        <div class="col">
+        <div class="col pricing-taille">
             <div class="card h-100 pricing-card shadow-sm">
                 <div class="card-body p-5">
                     <h5 class="card-title text-muted text-uppercase mb-4">Ultra</h5>
-                    <h1 class="display-5 mb-4">$14,99€<small class="text-muted fw-light">/mois</small></h1>
+                    <h1 class="display-5 mb-4">14,99€<small class="text-muted fw-light">/mois</small></h1>
                     <ul class="list-unstyled feature-list">
                         <li><i class="bi bi-check2 text-primary me-2"></i>🔥 Accès complet au catalogue exclusif</li>
                         <li><i class="bi bi-check2 text-primary me-2"></i>🔥 Qualité Ultra HD 4K</li>
@@ -241,7 +253,7 @@
                             Premium
                         </li>
                     </ul>
-                    <button class="btn btn-outline-primary btn-lg w-100 mt-4">Je m'abonne !</button>
+                    <a href="troll.html"><button class="btn btn-outline-primary btn-lg w-100 mt-4">Je m'abonne !</button></a>
                 </div>
             </div>
         </div>
@@ -251,7 +263,7 @@
 
 
 <!--début section testimonial-->
-<section class="testimoniaux">
+<section id="avis" class="testimoniaux">
     <div>
         <div class="container py-5">
             <h2 class="text-center mb-5">Ils nous font confiance !</h2>
@@ -325,22 +337,73 @@
 </section>
 <!--fin section testimonial-->
 <!--début section catégories-->
-
-<section>
-    <div>
-
+<p class="display-none">Clique sur "Genres" <i class="fa-solid fa-arrow-down"></i></p>
+<section id="categories" class="genres-section container my-5">
+    <h2 class="text-center genre-title d-md-none" onclick="toggleGenres()">Genres</h2>
+    <div id="genresMenu" class="row g-4">
+        <!-- Card 1 : Romance -->
+        <div class="col-md-4 col-lg-3">
+            <div class="card bg-romance text-center romance">
+                <div class="card-body romance">
+                    <h3 class="card-title">Romance</h3>
+                    <p class="card-text">Des histoires d'amour inoubliables.</p>
+                    <a href="#" class="btn btn-danger">Voir plus</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 2 : Action -->
+        <div class="col-md-4 col-lg-3">
+            <div class="card bg-action text-center anime">
+                <div class="card-body anime">
+                    <h3 class="card-title">Animé</h3>
+                    <p class="card-text">Plongez dans l'adrénaline pure.</p>
+                    <a href="#" class="btn btn-danger">Voir plus</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 3 : Fantastique -->
+        <div class="col-md-4 col-lg-3">
+            <div class="card bg-fantastique text-center fantastique">
+                <div class="card-body fantastique">
+                    <h3 class="card-title">Fantastique</h3>
+                    <p class="card-text">Découvrez des mondes extraordinaires.</p>
+                    <a href="#" class="btn btn-danger">Voir plus</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 4 : Comédie -->
+        <div class="col-md-4 col-lg-3">
+            <div class="card bg-comedie text-center comedie">
+                <div class="card-body comedie">
+                    <h3 class="card-title">Comédie</h3>
+                    <p class="card-text">Des rires garantis à chaque instant.</p>
+                    <a href="#" class="btn btn-danger">Voir plus</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 5 : Science-fiction -->
+        <div class="d-flex justify-content-center">
+            <div class="card bg-science text-center science-fiction">
+                <div class="card-body science-fiction">
+                    <h3 class="card-title">Science-fiction</h3>
+                    <p class="card-text">Voyagez au-delà de l'imaginable.</p>
+                    <a href="#" class="btn btn-danger">Voir plus</a>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
+
 
 <!--fin section catégories-->
 
 <!--début section avantages 2-->
 
 <section class="mt-5">
-    <h2 class="text-center mb-5">Le client est roi, toujours plus pour améliorer !</h2>
-    <div class="container-fluid benefits">
-        <div class="row">
-            <div class="col benefits-bg">
+    <h2 class="text-center mb-5">Toujours plus pour améliorer !</h2>
+    <div class="container benefits">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4">
+            <div class="col benefits-bg ligne-mobile">
                 <i class="fa-solid fa-heart"></i>
                 <h3>Recommandations personnalisées :</h3>
                 <p> Grâce à une analyse intelligente de vos préférences, Cinéflix vous
@@ -348,14 +411,14 @@
                     pépite. Chaque recommandation est unique et évolue au fil de vos visionnages pour enrichir votre
                     expérience.</p>
             </div>
-            <div class="col benefits-bg"><i class="fa-solid fa-bolt"></i>
+            <div class="col benefits-bg ligne-mobile"><i class="fa-solid fa-bolt"></i>
                 <h3>Mode hors-ligne : </h3>
                 <p>Téléchargez vos contenus préférés et regardez-les à tout moment, même sans connexion
                     internet. Que vous soyez en déplacement, en vacances ou dans une zone sans réseau, Cinéflix reste à
                     vos
                     côtés pour un accès illimité à votre bibliothèque.</p>
             </div>
-            <div class="col benefits-bg">
+            <div class="col benefits-bg ligne-mobile">
                 <i class="fa-solid fa-dollar-sign"></i>
                 <h3>Aucun engagement :</h3>
                 <p>La liberté avant tout ! Avec Cinéflix, vous n'êtes lié par aucun contrat. Abonnez-vous,
@@ -363,7 +426,7 @@
                     décidez,
                     selon vos envies et besoins.</p>
             </div>
-            <div class="col benefits-bg">
+            <div class="col benefits-bg ligne-mobile">
                 <i class="fa-solid fa-mug-hot"></i>
                 <h3>Serveur français :</h3>
                 <p>Profitez d’une connexion rapide et stable grâce à nos serveurs localisés en France. En plus
@@ -377,10 +440,98 @@
 <!--fin section avantages 2-->
 
 <!--début section +++++++++-->
-<section>
-    <h2 class="text-center mb-5">L'horreur à deux cliques de chez vous !</h2>
-</section>
+
+
 <!--fin section ++++++++++++-->
+<section id="articles" class="container my-5">
+    <!-- Article 1 -->
+    <h2 class="text-center mb-5">L'horreur à deux cliques de chez vous !</h2>
+
+    <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+            <img src="../img/bg-fixe-horreur.jpg" alt="Image article 1" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6">
+            <h3 class="section-article">Un article d'horreur sur j'ai pas encore choisis</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p>
+        </div>
+    </div>
+
+    <!-- Article 2 -->
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <img src="../img/imaginary-carousel-mp.jpg" alt="Image article 2" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6">
+            <h3 class="section-article">Un article d'horreur sur le film Imaginaire</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Les Genres -->
+            <div class="col-md-3">
+                <h5>Les genres</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Action</a></li>
+                    <li><a href="#" class="text-white">Comédie</a></li>
+                    <li><a href="#" class="text-white">Science-fiction</a></li>
+                    <li><a href="#" class="text-white">Romance</a></li>
+                    <li><a href="#" class="text-white">Fantastique</a></li>
+                </ul>
+            </div>
+
+            <!-- Nos Valeurs -->
+            <div class="col-md-3">
+                <h5>Nos valeurs</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Innovation</a></li>
+                    <li><a href="#" class="text-white">Passion</a></li>
+                    <li><a href="#" class="text-white">Sécurité</a></li>
+                    <li><a href="#" class="text-white">Engagement</a></li>
+                </ul>
+            </div>
+
+            <!-- Réseaux -->
+            <div class="col-md-3">
+                <h5>Réseaux</h5>
+                <ul class="list-unstyled reseaux-hover">
+                    <li><a href="#" class="text-white"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#" class="text-white"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#" class="text-white"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#" class="text-white"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="col-md-3">
+                <h5>Newsletter</h5>
+                <form>
+                    <div class="mb-3">
+                        <label for="email"  required class="form-label">Votre email :</label>
+                        <input type="email"  class="form-control" id="email" placeholder="Entrez votre email">
+                    </div>
+                    <a href="confirmation.html"><button type="submit" class="btn btn-danger w-100">S'inscrire</button></a>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--script bouton bootstrap-->
+<script>
+    function toggleGenres() {
+        const genresMenu = document.getElementById('genresMenu');
+        genresMenu.style.display = genresMenu.style.display === 'none' || genresMenu.style.display === '' ? 'flex' : 'none';
+    }
+</script>
+
 <!--font awesome-->
 <script crossorigin="anonymous" src="https://kit.fontawesome.com/26d2d5baaa.js"></script>
 
