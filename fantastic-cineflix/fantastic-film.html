@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CinéFlix - Streaming de Films Fantastiques</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body class="bg-warning text-white">
+    <!-- Hero Section -->
+     <style>@tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+        
+        @layer base {
+          html {
+            scroll-behavior: smooth;
+          }
+        
+          body {
+            @apply bg-gray-900 text-white;
+          }
+        }
+        
+        @layer utilities {
+          .container {
+            @apply max-w-7xl mx-auto px-4;
+          }
+        }
+        .body{
+          background-color: aqua;
+        }</style>
+    <section class="hero position-relative d-flex align-items-center justify-content-center overflow-hidden">
+        <div class="hero-bg position-absolute"></div>
+        <div class="container position-relative z-3 text-center py-5">
+            <h1 class="display-2 fw-bold mb-4 gradient-text">
+                Découvrez l'univers du fantastique
+            </h1>
+            <p class="lead text-light mb-5">
+                Explorez des mondes magiques et des aventures extraordinaires
+            </p>
+            <button class="btn btn-gradient btn-lg px-5 py-3 rounded-pill">
+                Je m'abonne <i class="bi bi-arrow-right ms-2"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5 bg-darker">
+        <div class="container py-5">
+            <h2 class="display-5 text-center mb-5">Pourquoi choisir CinéFlix ?</h2>
+            <div class="row g-4">
+                <div class="col-md-4 text-center">
+                    <div class="feature-icon bg-purple mb-4">
+                        <i class="bi bi-stars"></i>
+                    </div>
+                    <h3 class="h4 mb-3">Histoires magiques</h3>
+                    <p>Des récits enchanteurs qui vous transportent dans des univers extraordinaires</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="feature-icon bg-pink mb-4">
+                        <i class="bi bi-film"></i>
+                    </div>
+                    <h3 class="h4 mb-3">Nouveaux films chaque semaine</h3>
+                    <p>Une bibliothèque qui s'enrichit constamment de nouveaux contenus exclusifs</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="feature-icon bg-purple mb-4">
+                        <i class="bi bi-tv"></i>
+                    </div>
+                    <h3 class="h4 mb-3">Qualité HD et 4K</h3>
+                    <p>Une expérience visuelle exceptionnelle sur tous vos écrans</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Movies Section -->
+    <section class="py-5 bg-warning">
+        <div class="container py-5">
+            <h2 class="display-5 text-center mb-5">Films en Vedette</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="movie-card">
+                        <img src="img/genrefilms/games-of-thrones-compressed.jpg" alt="Games Of Thrones" class="img-fluid">
+                        <div class="movie-overlay">
+                            <h3 class="h5 mb-2">Games Of Thrones</h3>
+                            <div class="rating mb-3">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <span>4.9</span>
+                            </div>
+                            <button class="btn btn-outline-light rounded-pill">Regarder maintenant</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="movie-card">
+                        <img src="img/genrefilms/narnia-compressed.jpg" alt="The Chronicles of Narnia" class="img-fluid">
+                        <div class="movie-overlay">
+                            <h3 class="h5 mb-2">The Chronicles of Narnia</h3>
+                            <div class="rating mb-3">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <span>4.7</span>
+                            </div>
+                            <button class="btn btn-outline-light rounded-pill">Regarder maintenant</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="movie-card">
+                        <img src="img/genrefilms/harry-potter-compressed.jpg" alt="Harry Potter" class="img-fluid">
+                        <div class="movie-overlay">
+                            <h3 class="h5 mb-2">Harry Potter</h3>
+                            <div class="rating mb-3">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <span>4.8</span>
+                            </div>
+                            <button class="btn btn-outline-light rounded-pill">Regarder maintenant</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="movie-card">
+                        <img src="img/genrefilms/pans-labyrinth-compressed.jpg" alt="Pan's Labyrinth" class="img-fluid">
+                        <div class="movie-overlay">
+                            <h3 class="h5 mb-2">Pan's Labyrinth</h3>
+                            <div class="rating mb-3">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <span>4.6</span>
+                            </div>
+                            <button class="btn btn-outline-light rounded-pill">Regarder maintenant</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-5 bg-darker">
+        <div class="container py-5">
+            <h2 class="display-5 text-center mb-5">Choisissez votre offre</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white h-100">
+                        <div class="card-body text-center p-5">
+                            <h3 class="card-title h4 mb-4">Essential</h3>
+                            <div class="price mb-4">
+                                <span class="display-4 fw-bold">9.99€</span>
+                                <span class="text">/mois</span>
+                            </div>
+                            <ul class="list-unstyled mb-5">
+                                <li class="mb-3"><i class="bi bi-check2-circle text-warning me-2"></i>HD Streaming</li>
+                                <li class="mb-3"><i class="bi bi-check2-circle text-warning me-2"></i>1 Appareil</li>
+                                <li class="mb-3"><i class="bi bi-check2-circle text-warning me-2"></i>Accés Limitée</li>
+                            </ul>
+                            <button class="btn btn-outline-light rounded-pill w-100">Choisir Essential</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-secondary text-white h-100">
+                        <div class="popular-badge">Plus populaire</div>
+                        <div class="card-body text-center p-5">
+                            <h3 class="card-title h4 mb-4">Standard</h3>
+                            <div class="price mb-4">
+                                <span class="display-4 fw-bold">14.99€</span>
+                                <span>/mois</span>
+                            </div>
+                            <ul class="list-unstyled mb-5">
+                                <li class="mb-3"><i class="bi bi-check2-circle text-warning me-2"></i>Full HD</li>
+                                <li class="mb-3"><i class="bi bi-check2-circle text-warning me-2"></i>2 Appareils</li>
+                                <li class="mb-3"><i class="bi bi-check2-circle text-warning me-2"></i>Accés a tout</li>
+                                <li class="mb-3"><i class="bi bi-check2-circle text-warning me-2"></i>Pas De Pub</li>
+                            </ul>
+                            <button class="btn btn-light rounded-pill w-100">Choisir Standard</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white h-100">
+                        <div class="card-body text-center p-5">
+                            <h3 class="card-title h4 mb-4">Premium</h3>
+                            <div class="price mb-4">
+                                <span class="display-4 fw-bold">19.99€</span>
+                                <span>/mois</span>
+                            </div>
+                            <ul class="list-unstyled mb-5">
+                                <li class="mb-3"><i class="bi bi-check2-circle text-warning me-2"></i>4K Ultra HD</li>
+                                <li class="mb-3"><i class="bi bi-check2-circle text-warning me-2"></i>4 Appareils</li>
+                                <li class="mb-3"><i class="bi bi-check2-circle text-warning me-2"></i>Accés a tout</li>
+                                <li class="mb-3"><i class="bi bi-check2-circle text-warning me-2"></i>Pas De Pub</li>
+                                <li class="mb-3"><i class="bi bi-check2-circle text-warning me-2"></i>téléchargement hors ligne</li>
+                            </ul>
+                            <button class="btn btn-outline-light rounded-pill w-100">Choisir Premium</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5 bg-dark">
+        <div class="container py-5">
+            <h2 class="display-5 text-center mb-5">Ce que disent nos abonnés</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card bg-darker text-white">
+                        <div class="card-body p-4">
+                            <div class="stars mb-3">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                            <p class="card-text mb-4">CinéFlix a la meilleure collection de films fantastiques que j'aie jamais vue. La qualité de diffusion est exceptionnelle !</p>
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <h5 class="mb-1">Sarah Mitchell</h5>
+                                    <small class="text">Fantaisie Fan</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-darker text-white">
+                        <div class="card-body p-4">
+                            <div class="stars mb-3">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                            <p class="card-text mb-4">Une plateforme impressionnante qui comprend vraiment ce que les fans de fantasy recherchent. Sélection exceptionnelle !</p>
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <h5 class="mb-1">Michael Chen</h5>
+                                    <small class="text">Critiqueur reconnu</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-darker text-white">
+                        <div class="card-body p-4">
+                            <div class="stars mb-3">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                            <p class="card-text mb-4">La qualité 4K et le contenu exclusif rendent cet abonnement digne de chaque centime. Fortement recommandé !</p>
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <h5 class="mb-1">Emma Thompson</h5>
+                                    <small class="text">Utilisateur Vérifié</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer  class="py-5 bg-darker">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <h3 class="h5 mb-3">CinéFlix</h3>
+                    <p class="text">Votre destination pour le meilleur du cinéma fantastique.</p>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="h6 mb-3">Navigation</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text">Accueil</a></li>
+                        <li class="mb-2"><a href="#" class="text">Films</a></li>
+                        <li class="mb-2"><a href="#" class="text">Séries</a></li>
+                        <li class="mb-2"><a href="#" class="text">Abonnements</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="h6 mb-3">Aide</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text">FAQ</a></li>
+                        <li class="mb-2"><a href="#" class="text">Contact</a></li>
+                        <li class="mb-2"><a href="#" class="text">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="h6 mb-3">Légal</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text">Conditions d'utilisation</a></li>
+                        <li class="mb-2"><a href="#" class="text">Politique de confidentialité</a></li>
+                        <li class="mb-2"><a href="#" class="text">Mentions légales</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-5 border-secondary">
+            <p class="text-center text mb-0">&copy; 2024 CinéFlix. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script> /** @type {import('tailwindcss').Config} */
+    export default {
+      content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+      theme: {
+        extend: {},
+      },
+      plugins: [],
+    };</script>
+
+    
+</body>
+</html>

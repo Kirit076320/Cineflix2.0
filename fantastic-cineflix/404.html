@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Erreur 404</title>
+</head>
+<body class="gif">
+
+<style>
+    .gif{
+    background-image: url("https://images.unsplash.com/gifs/fail/fail-1.gif");
+    background-size: 100%;}
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #121212;
+        color: #ffffff;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        background-color: #222;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    a {
+        color: #ffcc00;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    button {
+        background-color: #ffcc00;
+        color: #121212;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #ffaa00;
+    }
+
+</style>
+<div class="container">
+    <h1>Oups ! Page Introuvable 🧙‍♂️</h1>
+    <p>Il semble que cette page ait disparu comme un anneau dans la lave du Mont Destin...</p>
+    <p>Pas de panique, la magie peut vous ramener à <a href="fantastic-film.html">l'accueil</a> !</p>
+    <button onclick="window.location.href='fantastic-film.html'">Retour à la maison</button>
+</div>
+
+
+</body>
+<script>
+    (function (window, undefined) {
+
+        var c,
+            cache,
+            state,
+            view,
+            dispatch,
+            defaults;
+
+        c = cache = {};
+        state = {};
+        view = {};
+        dispatch = {};
+        defaults = {
+            gifs: {
+                fail: [
+                    'https://images.unsplash.com/gifs/fail/fail-1.gif',
+                    'https://images.unsplash.com/gifs/fail/fail-2.gif',
+                    'https://images.unsplash.com/gifs/fail/fail-3.gif',
+                    'https://images.unsplash.com/gifs/fail/fail-5.gif',
+                    'https://images.unsplash.com/gifs/fail/fail-6.gif',
+                    'https://images.unsplash.com/gifs/fail/fail-7.gif',
+                    'https://images.unsplash.com/gifs/fail/fail-8.gif',
+                    'https://images.unsplash.com/gifs/fail/fail-9.gif',
+                    'https://images.unsplash.com/gifs/fail/fail-11.gif',
+                    'https://images.unsplash.com/gifs/fail/fail-12.gif',
+                    'https://images.unsplash.com/gifs/fail/fail-13.gif',
+                    'https://images.unsplash.com/gifs/fail/fail-14.gif',
+                    'https://images.unsplash.com/gifs/fail/fail-15.gif',
+                    'https://images.unsplash.com/gifs/fail/fail-16.gif',
+                    'https://images.unsplash.com/gifs/fail/fail-17.gif',
+                    'https://images.unsplash.com/gifs/fail/fail-18.gif',
+                    'https://images.unsplash.com/gifs/fail/fail-20.gif',
+                    'https://images.unsplash.com/gifs/fail/fail-21.gif',
+                    'https://images.unsplash.com/gifs/fail/fail-22.gif',
+                ],
+                weird: [
+                    'https://images.unsplash.com/gifs/weird/weird-1.gif',
+                    'https://images.unsplash.com/gifs/weird/weird-3.gif',
+                    'https://images.unsplash.com/gifs/weird/weird-4.gif',
+                    'https://images.unsplash.com/gifs/weird/weird-6.gif',
+                    'https://images.unsplash.com/gifs/weird/weird-8.gif',
+                    'https://images.unsplash.com/gifs/weird/weird-9.gif',
+                    'https://images.unsplash.com/gifs/weird/weird-10.gif',
+                    'https://images.unsplash.com/gifs/weird/weird-11.gif',
+                    'https://images.unsplash.com/gifs/weird/weird-12.gif',
+                    'https://images.unsplash.com/gifs/weird/weird-13.gif',
+                    'https://images.unsplash.com/gifs/weird/weird-14.gif',
+                    'https://images.unsplash.com/gifs/weird/weird-15.gif',
+                    'https://images.unsplash.com/gifs/weird/weird-16.gif',
+                ]
+            }
+        };
+
+        cache.init = function () {
+            this.body = document.body;
+        };
+
+        state.init = function () {
+            this.gifs = defaults.gifs.fail;
+        };
+
+        state.getRandomGif = function () {
+            return this.gifs[Math.floor(Math.random() * this.gifs.length)];
+        };
+
+        view.init = function () {
+            c.body.style.backgroundImage = 'url(' + state.getRandomGif() + ')';
+        };
+
+        cache.init();
+        state.init();
+        view.init();
+
+    })(window);
+</script>
+</html>

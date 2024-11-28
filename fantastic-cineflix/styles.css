@@ -1,0 +1,170 @@
+/* Custom Properties */
+:root {
+    --purple: #9333ea;
+    --pink: #ec4899;
+    --dark: #111827;
+    --darker: #0f172a;
+}
+.h5{
+    color: red;
+}
+.h6{
+    color: red;
+}
+.text{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+/* Base Styles */
+body {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bg-dark {
+    background-color: var(--dark) !important;
+}
+
+.bg-darker {
+    background-color: var(--darker) !important;
+}
+
+.bg-purple {
+    background-color: var(--purple) !important;
+}
+
+.bg-pink {
+    background-color: var(--pink) !important;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    background-color: var(--dark);
+}
+
+.hero-bg {
+    inset: 0;
+    background: url('img/genrefilms/background-hero-title-got.jpg') center/cover no-repeat;
+}
+
+.hero-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #c084fc, #ec4899);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.btn-gradient {
+    background: linear-gradient(to right, var(--purple), var(--pink));
+    border: none;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.btn-gradient:hover {
+    transform: scale(1.05);
+    color: white;
+}
+
+/* Feature Icons */
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.feature-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+/* Movie Cards */
+.movie-card {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    aspect-ratio: 2/3;
+}
+
+.movie-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.movie-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.movie-card:hover img {
+    transform: scale(1.1);
+}
+
+.movie-card:hover .movie-overlay {
+    opacity: 1;
+}
+
+/* Pricing Cards */
+.card.popular {
+    transform: scale(1.05);
+    background: linear-gradient(to bottom, var(--purple), var(--pink));
+}
+
+.popular-badge {
+    position: absolute;
+    top: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fbbf24;
+    color: #111827;
+    padding: 0.25rem 1rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+/* Testimonial Cards */
+.card.bg-darker {
+    background-color: var(--darker) !important;
+}
+
+/* Footer Links */
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: white !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .card.popular {
+        transform: none;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
