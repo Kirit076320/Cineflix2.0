@@ -83,6 +83,21 @@ p {
     color: #6c757d;
 }
 
+.list-non li{
+    list-style: none;
+}
+
+.genres-hover a:hover {
+    color: #B80000!important;
+}
+
+.bordure {
+    background-color: #312c2c;
+    padding: 50px;
+}
+
+.reseaux-hover i:hover  {color: #B80000;}
+
 .popular-badge {
     position: absolute;
     top: -12px;
@@ -118,35 +133,35 @@ p {
     background-image: url('../img/genres-romance.jpg');
     background-size: cover;
     background-position: center;
-    min-height: 250px;
+    min-height: 400px;
 }
 
 .bg-action {
     background-image: url('../img/genres-raiden.jpg');
     background-size: cover;
     background-position: center;
-    min-height: 250px;
+    min-height: 400px;
 }
 
 .bg-fantastique {
     background-image: url('../img/genres-fantastique.jpg');
     background-size: cover;
     background-position: center;
-    min-height: 250px;
+    min-height: 400px;
 }
 
 .bg-comedie {
     background-image: url('../img/genres-comedie.jpg');
     background-size: cover;
     background-position: center;
-    min-height: 250px;
+    min-height: 400px;
 }
 
 .bg-science {
     background-image: url('../img/genres-sci.jpg');
     background-size: cover;
     background-position: center;
-    min-height: 250px;
+    min-height: 400px;
 }
 
 .romance p {
@@ -314,6 +329,8 @@ p {
 }
 
 /*fin section articles*/
+
+
 @media (max-width: 575.98px) {
     .taille-icon {
         font-size: 2rem;
@@ -359,7 +376,12 @@ p {
 }
 
 /*footer*/
+@media (max-width: 464px) {
+    .margin-mobile {
+        margin-top: 70vh;
+    }
 
+}
 
 @media (max-width: 768px) {
     .taille-icon {
