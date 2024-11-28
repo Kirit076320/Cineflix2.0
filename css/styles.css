@@ -44,7 +44,7 @@ body {
 
 .hero-bg {
     inset: 0;
-    background: url('img/genrefilms/background-hero-title-got.jpg') center/cover no-repeat;
+    background: url('../img/genrefilms/background-hero-title-got.jpg') center/cover no-repeat;
 }
 
 .hero-bg::after {
