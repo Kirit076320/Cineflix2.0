@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .romance_main{
-    background-color: rgba(195, 3, 160, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 .swiper-wrapper {
     width: 100%;
@@ -22,4 +22,13 @@
 }
 .romance_textemp{
 max-width: 50%;
+}
+.action_categorie{
+    background-image: url("../img/action_categorie.jpg");
+}
+.fantastique_categorie{
+    background-image: url("../img/fantastique_categorie.jpg");
+}
+.comedie_categorie{
+    background-image: url("../img/comedie-categorie.jpg") ;
 }
