@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!DOCTYPE html>
+    <html lang="fr">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"
+        />
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+          crossorigin="anonymous"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"
+        />
+        <meta
+          name="description"
+          content="Découvrez CinéFlix, votre plateforme incontournable pour explorer un vaste choix de films. Profitez de critiques, recommandations et nouveautés chaque jour."
+        />
+        <meta name="robots" content="noindex, nofollow" />
+        <meta property="og:title" content="Plateform de films" />
+        <meta
+          property="og:description"
+          content="Plateform de films en lignes"
+        />
+        <meta property="og:url" content="https://michalsnik.github.io/aos/" />
+        <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
+        <link rel="stylesheet" href="../css/comedie.css" />
+        <title>CyberLink Academy</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <style>
+          @keyframes neon-pulse {
+            0%,
+            100% {
+              text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff,
+                0 0 20px #00ffff, 0 0 35px #00ffff, 0 0 40px #00ffff,
+                0 0 50px #00ffff, 0 0 75px #00ffff;
+            }
+            50% {
+              text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 7px #fff,
+                0 0 10px #00ffff, 0 0 17px #00ffff, 0 0 20px #00ffff,
+                0 0 25px #00ffff, 0 0 37px #00ffff;
+            }
+          }
+
+
+
+
+          
+          .neon-text {
+            animation: neon-pulse 1.5s infinite alternate;
+          }
+
+          .bg-animated {
+            background: linear-gradient(
+              -45deg,
+              #000000,
+              #1a1a1a,
+              #000033,
+              #003366
+            );
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+          }
+
+          @keyframes gradient {
+            0% {
+              background-position: 0% 50%;
+            }
+            50% {
+              background-position: 100% 50%;
+            }
+            100% {
+              background-position: 0% 50%;
+            }
+          }
+
+          .cyber-grid {
+            background-image: linear-gradient(
+                rgba(0, 255, 255, 0.1) 1px,
+                transparent 1px
+              ),
+              linear-gradient(
+                90deg,
+                rgba(0, 255, 255, 0.1) 1px,
+                transparent 1px
+              );
+            background-size: 20px 20px;
+            animation: cyber-grid-move 20s linear infinite;
+          }
+
+          @keyframes cyber-grid-move {
+            0% {
+              background-position: 0 0;
+            }
+            100% {
+              background-position: 20px 20px;
+            }
+          }
+
+          .nav-link {
+            position: relative;
+            overflow: hidden;
+          }
+
+          .nav-link::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #00ffff;
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+          }
+
+          .nav-link:hover::before {
+            transform: translateX(0);
+          }
+
+          .nav-link::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: translateY(100%);
+            background: linear-gradient(to bottom, #00ffff, #0080ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: transform 0.3s ease;
+          }
+
+          .nav-link:hover::after {
+            transform: translateY(0);
+          }
+
+          .glitch-effect {
+            position: relative;
+          }
+
+          .glitch-effect::before,
+          .glitch-effect::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.8;
+          }
+
+          .glitch-effect::before {
+            left: 2px;
+            text-shadow: -2px 0 #ff00de;
+            clip: rect(24px, 550px, 90px, 0);
+            animation: glitch-anim 3s infinite linear alternate-reverse;
+          }
+
+          .glitch-effect::after {
+            left: -2px;
+            text-shadow: -2px 0 #00ffff;
+            clip: rect(85px, 550px, 140px, 0);
+            animation: glitch-anim 2s infinite linear alternate-reverse;
+          }
+
+          @keyframes glitch-anim {
+            0% {
+              clip: rect(39px, 9999px, 71px, 0);
+            }
+            20% {
+              clip: rect(3px, 9999px, 5px, 0);
+            }
+            40% {
+              clip: rect(6px, 9999px, 38px, 0);
+            }
+            60% {
+              clip: rect(13px, 9999px, 43px, 0);
+            }
+            80% {
+              clip: rect(44px, 9999px, 93px, 0);
+            }
+            100% {
+              clip: rect(54px, 9999px, 47px, 0);
+            }
+          }
+
+          #menu-toggle:checked ~ .menu-icon .hamburger {
+            transform: rotate(45deg);
+          }
+
+          #menu-toggle:checked ~ .menu-icon .hamburger::before {
+            transform: translateY(8px) rotate(90deg);
+          }
+
+          #menu-toggle:checked ~ .menu-icon .hamburger::after {
+            transform: translateY(-8px) rotate(90deg);
+          }
+
+          .hamburger,
+          .hamburger::before,
+          .hamburger::after {
+            content: "";
+            display: block;
+            background: #00ffff;
+            height: 3px;
+            width: 30px;
+            transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+          }
+
+          .hamburger::before {
+            transform: translateY(-8px);
+          }
+          .hamburger::after {
+            transform: translateY(8px);
+          }
+
+          @media (max-width: 768px) {
+            .menu {
+              position: fixed;
+              top: 60px;
+              left: 0;
+              width: 100%;
+              height: 0;
+              background: rgba(0, 0, 0, 0.9);
+              overflow: hidden;
+              transition: height 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            }
+
+            #menu-toggle:checked ~ .menu {
+              height: calc(100vh - 60px);
+            }
+          }
+
+          .feature-card {
+            backdrop-filter: blur(10px);
+            background-color: rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(0, 255, 255, 0.1);
+            transition: all 0.3s ease;
+          }
+
+          .feature-card:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+          }
+
+          .feature-icon {
+            transition: all 0.3s ease;
+          }
+
+          .feature-card:hover .feature-icon {
+            transform: rotate(360deg) scale(1.2);
+          }
+
+          @keyframes float {
+            0%,
+            100% {
+              transform: translateY(0);
+            }
+            50% {
+              transform: translateY(-20px);
+            }
+          }
+
+          .floating {
+            animation: float 6s ease-in-out infinite;
+          }
+
+          .testimonial-card {
+            background: rgba(0, 0, 0, 0.7);
+            border: 1px solid rgba(0, 255, 255, 0.3);
+            transition: all 0.3s ease;
+          }
+
+          .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+          }
+
+          .neon-border {
+            box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff,
+              0 0 20px #00ffff, 0 0 35px #00ffff, 0 0 40px #00ffff;
+            animation: neon-border-pulse 1.5s infinite alternate;
+          }
+
+          @keyframes neon-border-pulse {
+            0%,
+            100% {
+              box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff,
+                0 0 20px #00ffff, 0 0 35px #00ffff, 0 0 40px #00ffff;
+            }
+            50% {
+              box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 7px #fff,
+                0 0 10px #00ffff, 0 0 17px #00ffff, 0 0 20px #00ffff;
+            }
+          }
+        </style>
+      </head>
+      <body class="bg-black text-white">
+          <!-- Navbar -->
+          <nav class="bg-animated cyber-grid fixed w-full z-50">
+            <div class="container mx-auto px-4">
+                <div class="flex justify-between items-center py-4">
+                    <a href="#" class="text-2xl font-bold neon-text glitch-effect" data-text="Cinéflix">Cinéflix</a>
+                    <input type="checkbox" id="menu-toggle" class="hidden">
+                    <label for="menu-toggle" class="menu-icon cursor-pointer md:hidden">
+                        <span class="hamburger"></span>
+                    </label>
+                    <ul class="menu hidden md:flex md:items-center space-x-6">
+                        <li><a href="#" class="nav-link" data-text="Home">Accueil</a></li>
+                        <li><a href="#" class="bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold py-2 px-4 rounded hover:from-cyan-600 hover:to-blue-600 transition-all duration-300">S'enregistrer</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Hero Section -->
+        <section
+          class="bg-animated cyber-grid min-h-screen flex items-center justify-center p-4"
+        >
+
+            <!-- <input type="checkbox" id="menu-toggle" class="hidden" />
+            <div id="particles"></div> -->
+            <div class="text-center z-10">
+            <h1
+              class="taille-de-mon-titre text-6xl font-bold mb-4 text-white neon-text glitch-effect hover-3d"
+              data-text="Cinéflix"
+            >
+              Cinéflix
+            </h1>   
+            <p class="text-xl text-cyan-300 mb-8">Le meilleur des films</p>
+            <a
+              href="#"
+              class="bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold py-3 px-8 rounded-full hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 hover:scale-110 inline-block"
+            >
+              <i class="fas fa-rocket mr-2"></i>S'abonner
+            </a>
+            <audio class="musique-vlad" autoplay controls src="../Vladimir Cosma - Jalousie-blues.mp3"></audio>
+          </div>
+          
+        </section>
+        
+
+        <!-- Feature Section -->
+        <section class="bg-animated cyber-grid py-20 relative overflow-hidden">
+          <div class="container mx-auto px-4">
+            <h2
+              class="text-4xl font-bold text-center mb-12 neon-text glitch-effect"
+              data-text=" Avantages"
+            >
+              Avantages
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div class="feature-card rounded-lg p-6 floating">
+                <div class="text-5xl mb-4 text-cyan-400 feature-icon">
+                  <i class="fas fa-brain"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Large catalogue de films et séries</h3>
+                <p class="text-gray-300">
+                    Cinéflix offre un accès à une vaste bibliothèque de films, séries et documentaires couvrant tous les genres : action, comédie, drame, thriller, science-fiction, et bien plus encore. Avec de nouveaux contenus ajoutés régulièrement, il y en a pour tous les goûts.
+                </p>
+              </div>
+              <div
+                class="feature-card rounded-lg p-6 floating"
+                style="animation-delay: 1s"
+              >
+                <div class="text-5xl mb-4 text-pink-500 feature-icon">
+                  <i class="fas fa-vr-cardboard"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Interface conviviale et intuitive</h3>
+                <p class="text-gray-300">
+                    Naviguez facilement entre les différentes catégories grâce à une interface simple et bien conçue. Vous pouvez trouver rapidement vos films ou séries préférés grâce à une barre de recherche performante, des recommandations personnalisées et une navigation fluide.
+                </p>
+              </div>
+              <div
+                class="feature-card rounded-lg p-6 floating"
+                style="animation-delay: 2s"
+              >
+                <div class="text-5xl mb-4 text-purple-500 feature-icon">
+                  <i class="fas fa-robot"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Accès multi-plateformes</h3>
+                <p class="text-gray-300">
+                    Cinéflix est accessible sur une variété de supports : ordinateurs, smartphones, tablettes et smart TV. Que vous soyez à la maison ou en déplacement, vous pouvez regarder vos films et séries où vous voulez, quand vous voulez.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+       
+        <!----                                       titre film vedette                             -->
+        <section class="bg-animated cyber-grid py-20 relative overflow-hidden">
+            <div class="container mx-auto px-4">
+        <h2
+          class="text-4xl font-bold text-center mb-12 neon-text glitch-effect"
+          data-text=" Films Vedette"
+        >
+          Films Vedette
+        </h2>
+   
+
+        <!-------------------------------------------       caroussel                 --------------------------------------------->
+
+        <!-- Caroussel présentation des films -->
+      
+          <div class="your-slider">
+            <!--        0eme film     -->
+            <div>
+              <p class="youpi Text-presentation"></p>
+              <img
+                class="Taille-image"
+                src="../img/idiana-jones.jpg"
+                alt="Film 1"
+              />
+              <a href=""
+                ><button type="button" class=" btn btn-outline-warning">Je m'abonne</button></a
+              >
+            </div>
+            <!--        1er film     -->
+            <div>
+              <p class="Text-presentation"></p>
+              <img
+                class="Taille-image"
+                src="../img/la-grande-vadrouille.jpg"
+                alt="Film 2"
+              /><a href=""
+              ><button type="button" class=" btn btn-outline-warning">Je m'abonne</button></a
+            >
+              <!-- <audio autoplay controls src="panther-rose.mp3"></audio> -->
+            </div>
+            <!--        2eme film     -->
+            <div>
+              <p class="Text-presentation"></p>
+              <img
+                class="Taille-image"
+                src="../img/la_grande_evasion.jpg"
+                alt="Film 3"
+              /><a href=""
+              ><button type="button" class=" btn btn-outline-warning">Je m'abonne</button></a
+            >
+            </div>
+            <!--        3eme film     -->
+            <div>
+              <p class="Text-presentation"></p>
+              <img
+                class="Taille-image"
+                src="../img/les-tontons-flingueurs.jpg"
+                alt="Film 4"
+              /><a href=""
+              ><button type="button" class=" btn btn-outline-warning">Je m'abonne</button></a
+            >
+            </div>
+            <!--        4eme film     -->
+            <div>
+              <p class="Text-presentation"></p>
+              <img
+                class="Taille-image"
+                src="../img/vingt_mille_lieues_sous_les_mers.jpg"
+                alt="Film 5"
+              /><a href=""
+              ><button type="button" class=" btn btn-outline-warning">Je m'abonne</button></a
+            >
+            </div>
+            <!--        5eme film     -->
+            <div>
+              <p class="Text-presentation"></p>
+              <img
+                class="Taille-image"
+                src="../img/voyage-au-centre-de-la-terre.jpg"
+                alt="Film 6"
+              /><a href=""
+              ><button type="button" class=" btn btn-outline-warning">Je m'abonne</button></a
+            >
+            </div>
+          </div>
+       </section>
+        <!-----                              Abonnement                                --------------->
+
+        <section class="bg-animated cyber-grid py-20 relative overflow-hidden">
+            <div class="container mx-auto px-4">
+              <h2
+                class="text-4xl font-bold text-center mb-12 neon-text glitch-effect"
+                data-text=" Offres d'Abonnement"
+              >
+                Offres d'Abonnement
+              </h2>
+              <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="feature-card rounded-lg p-6 floating boutton-mid">
+                  <h3 class="couleur-a abo-class text-2xl font-bold mb-2">ESSENTIEL</h3>
+                  <p class=" abo-class text-gray-300">
+                    Prix par mois : 8,99 € <br/> <br/>
+                    Qualité vidéo : HD (720p) <br/> <br/>
+                    Nombre d'écrans : 1 <br/> <br/>
+                  </p>
+                  <button type="button" class="boutton-syze btn btn-outline-success">S'abonner</button>
+                </div>
+                <div
+                  class="feature-card rounded-lg p-6 floating boutton-mid"
+                >
+
+                  <h3 class="couleur-a abo-class text-2xl font-bold mb-2">STANDARD</h3>
+                  <p class=" abo-class text-gray-300">
+                    Prix par mois : 13,99 € <br/> <br/>
+                    Qualité vidéo : Full HD (1080p) <br/> <br/>
+                    Nombre d'écrans : 2 <br/> <br/>
+                  </p>
+                  <button type="button" class="boutton-syze btn btn-outline-success ">S'abonner</button>
+                </div>
+                <div
+                  class="feature-card rounded-lg p-6 floating boutton-mid"
+                >
+                  <h3 class="couleur-a abo-class text-2xl font-bold mb-2">PREMIUM</h3>
+                  <p class=" abo-class text-gray-300">
+                    Prix par mois : 17,99 €<br/> <br/>
+                    Qualité vidéo : Ultra HD (4K)<br/> <br/>
+                    Nombre d'écrans : 4<br/> <br/>
+                  </p>
+                  <button type="button" class="boutton-syze btn btn-outline-success">S'abonner</button>
+                </div>
+              </div>
+            </div>
+          </section>
+           <!--                                            Avis                                Section               -->
+        <section class="bg-animated cyber-grid py-20">
+            <div class="container mx-auto px-4">
+              <h2
+                class="text-4xl font-bold text-center mb-12 neon-text glitch-effect"
+                data-text="Avis des clients"
+              >
+                Avis des clients
+              </h2>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="testimonial-card rounded-lg p-6">
+                  <div class="flex items-center mb-4">
+                    <img
+                      src="https://i.pravatar.cc/60?img=1"
+                      alt="Student 1"
+                      class="rounded-full mr-4"
+                    />
+                    <div>
+                      <h4 class="font-bold">Lucas le bg</h4>
+                      <p class="text-cyan-400">Avis positif général :</p>
+                    </div>
+                  </div>
+                  <p class="text-gray-300">"J'adore utiliser Cinéflix ! La sélection de films et de séries est incroyable, avec des nouveautés chaque semaine. L'interface est super simple à utiliser, et je n'ai jamais eu de problème avec le streaming. En plus, la qualité vidéo et sonore est top ! Je recommande vivement à tous les passionnés de cinéma."</p>
+                </div>
+                <div class="testimonial-card rounded-lg p-6">
+                  <div class="flex items-center mb-4">
+                    <img
+                      src="https://i.pravatar.cc/60?img=2"
+                      alt="Student 2"
+                      class="rounded-full mr-4"
+                    />
+                    <div>
+                      <h4 class="font-bold">Kevin l'abeille</h4>
+                      <p class="text-cyan-400">Avis sur la qualité de service :</p>
+                    </div>
+                  </div>
+                  <p class="text-gray-300">
+                      "Service impeccable sur Cinéflix ! Le site fonctionne parfaitement bien, même avec une connexion internet un peu lente. Je suis fan des suggestions personnalisées basées sur mes goûts. En plus, le support client est réactif et super utile si jamais j'ai une question. Un vrai plaisir d'être abonné."
+                  </p>
+                </div>
+                <div class="testimonial-card rounded-lg p-6">
+                  <div class="flex items-center mb-4">
+                    <img
+                      src="https://i.pravatar.cc/60?img=3"
+                      alt="Student 3"
+                      class="rounded-full mr-4"
+                    />
+                    <div>
+                      <h4 class="font-bold">Robert</h4>
+                      <p class="text-cyan-400">Avis sur la diversité des films :</p>
+                    </div>
+                  </div>
+                  <p class="text-gray-300">
+                    "J'aime beaucoup la variété de films proposés sur Cinéflix, que ce soit des classiques du cinéma ou des films récents. J'apprécie aussi le large éventail de genres disponibles, ce qui me permet de découvrir de nouvelles choses. Cependant, j'aimerais qu'il y ait un peu plus de films en VO sous-titrée."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!--                          Tuiles de categories                               -->
+
+
+          <section class="bg-animated cyber-grid py-20 relative overflow-hidden">
+            <div class="container mx-auto px-4">
+              <h2
+                class="text-4xl font-bold text-center mb-12 neon-text glitch-effect"
+                data-text="Genres de film"
+              >
+                Genres de film
+              </h2>
+              
+<!-- fin-->
+
+          <div class="finsection"></div>
+      <div class="genres"> 
+        <div class="flex2">
+          <img class="espacement" src="../img/twilight-romance.jpg" alt="image romance" />
+          <img class="espacement" src="../img/james-bond-actionn.jpg" alt="image action" />
+          <img class="espacement" src="../img/Princesse-monoke-anime.jpg" alt="image anime" />
+          <img class="espacement" src="../img/harry-potter-fantastique.jpg" alt="image fantastique" />
+          <img class="espacement" src="../img/film-dhorreur-scream.jpg" alt="image horreur" />
+        </div>
+        </div>
+
+        <!--                  accordeon                  -->
+        <div class="recentrer">
+        <div class="accordion accordion-flush taille-acco" id="accordionFlushExample">
+          <div class="accordion-item ">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Romance
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Voici le lien vers la page : <a class="souligne"  href="romance.html">ROMANCE</a></div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Action
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Voici le lien vers la page : <a class="souligne"  href="action.html">ACTION</a></div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Animé
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Voici le lien vers la page : <a class="souligne"  href="anime.html">ANIME</a></div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                Fantastique
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Voici le lien vers la page : <a class="souligne"  href="fantastique.html">FANTASTIQUE</a></div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                Horreur
+              </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Voici le lien vers la page : <a class="souligne" href="horreur.html">HORREUR</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+
+
+
+          <!-----                                     Benefices d'un abo                         -->
+
+
+          <section class="bg-animated cyber-grid py-20 relative overflow-hidden">
+            <div class="container mx-auto px-4">
+              <h2
+                class="text-4xl font-bold text-center mb-12 neon-text glitch-effect"
+                data-text="Bénéfices d'un abonnement"
+              >
+                Bénéfices d'un abonnement
+              </h2>
+              <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="feature-card rounded-lg p-6 floating boutton-mid">
+                  <h3 class="couleur-b abo-class text-2xl font-bold mb-2">Hors ligne</h3>
+                  <p class=" abo-class text-gray-300">
+                    Ils peuvent télécharger leurs films et séries préférés pour les regarder plus tard, même lorsqu'ils n'ont pas de connexion internet (lors de déplacements, dans des zones sans couverture, etc.).
+                  </p>
+                  <button type="button" class=" boutton-deuxieme btn btn-warning">S'abonner</button>
+                </div>
+                <div
+                  class="feature-card rounded-lg p-6 floating boutton-mid"
+                >
+
+                  <h3 class="couleur-b abo-class text-2xl font-bold mb-2">Large bibliothèque</h3>
+                  <p class=" abo-class text-gray-300">
+                    Pour les utilisateurs : Ils peuvent accéder facilement à une vaste collection de films, de séries et de documentaires, souvent bien plus grande que celle d'une plateforme classique.
+                  </p>
+                  <button type="button" class=" boutton-deuxieme btn btn-warning">S'abonner</button>
+                </div>
+                <div
+                  class="feature-card rounded-lg p-6 floating boutton-mid"
+                >
+                  <h3 class="couleur-b abo-class text-2xl font-bold mb-2">Accessibilité multi-appareils</h3>
+                  <p class=" abo-class text-gray-300">
+                    Un site qui peut être consulté sur plusieurs plateformes (PC, tablette, smartphone, télévision) permet aux utilisateurs de profiter de leurs films et séries à tout moment et en tout lieu.
+                  </p>
+                  <button type="button" class=" boutton-deuxieme btn btn-warning">S'abonner</button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!--        boutton poussin         -->
+
+          <section class="bg-animated cyber-grid py-20 relative overflow-hidden">
+            <div class="poussin  mx-auto px-4">
+              <h2
+              class="text-4xl font-bold text-center mb-12 neon-text glitch-effect"
+              data-text="Notre selection pour vous"
+            >
+            Notre selection pour vous
+            </h2>
+
+          <div class="hero-section-image">
+            <div class="container-fluid text-center">
+            
+
+
+        
+              <div class="couleur-texte-avantages row offres justify-content-around">
+                <div class="col-12 col-sm-6 col-md-3 text-center espace-avantages">
+                  <h4 class="titre-sectrion">Le diner de cons</h4>                  
+                  <img class="descend" src="../img/diner-de-cons.jpg">
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 text-center">
+                  <h4 class="titre-sectrion">Permis de construire</h4>
+                  <img class="descend" src="../img/permis-de-construire.jpg">
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 text-center">
+                  <h4 class="titre-sectrion">La panthère rose</h4>
+                  <img class="descend" src="../img/Panthere-rose.jpg">
+                </div>
+              </div>
+
+
+
+
+
+
+              <div class="container">
+                <a href="#" class="button button--piyo">
+                  <div class="button__wrapper">
+                    <span class="button__text">S'abonner</span>
+                  </div>
+                  <div class="characterBox">
+                    <div class="character wakeup">
+                      <div class="character__face"></div>
+                    </div>
+                    <div class="character wakeup">
+                      <div class="character__face"></div>
+                    </div>
+                    <div class="character">
+                      <div class="character__face"></div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          </div>
+          </section>
+
+
+          
+
+
+
+        <!-- Footer -->
+        <footer class="bg-animated cyber-grid relative overflow-hidden">
+          <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div class=" md:text-left">
+                <h3 class="text-2xl font-bold text-white neon-text mb-4">
+                  Cinéflix
+                </h3>
+                
+              </div>
+              <div class="text-center">
+                <h4 class="text-xl font-bold text-white mb-4">Liens</h4>
+                <ul class="space-y-2">
+                  <li>
+                    <a
+                      href="#"
+                      class="text-cyan-300 hover:text-white transition-colors duration-300"
+                      >Page d'acceuil</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-cyan-300 hover:text-white transition-colors duration-300"
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-cyan-300 hover:text-white transition-colors duration-300"
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-cyan-300 hover:text-white transition-colors duration-300"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class=" md:text-right">
+                <h4 class="text-xl font-bold text-white mb-4">
+                  Nous retrouver 
+                </h4>
+                <div class="flex justify-center md:justify-end space-x-4">
+                  <a
+                    href="#"
+                    class="text-cyan-300 hover:text-white transition-colors duration-300"
+                    ><i class="fab fa-facebook-f text-2xl"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="text-cyan-300 hover:text-white transition-colors duration-300"
+                    ><i class="fab fa-twitter text-2xl"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="text-cyan-300 hover:text-white transition-colors duration-300"
+                    ><i class="fab fa-instagram text-2xl"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="text-cyan-300 hover:text-white transition-colors duration-300"
+                    ><i class="fab fa-linkedin-in text-2xl"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-cyan-800">
+              <p class="text-center text-cyan-300">&copy; 2024 Cinéflix. <a class="souligner" href="">Mentions Légales</a> </p>
+            </div>
+          </div>
+          <div class="absolute inset-0 pointer-events-none neon-border"></div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+          // Navbar toggle functionality
+          const menuToggle = document.getElementById("menu-toggle");
+          const menu = document.querySelector(".menu");
+
+          menuToggle.addEventListener("change", function () {
+            if (this.checked) {
+              menu.classList.remove("hidden");
+              menu.classList.add(
+                "flex",
+                "flex-col",
+                "items-center",
+                "justify-center",
+                "space-y-4"
+              );
+            } else {
+              menu.classList.add("hidden");
+              menu.classList.remove(
+                "flex",
+                "flex-col",
+                "items-center",
+                "justify-center",
+                "space-y-4"
+              );
+            }
+          });
+
+          window.addEventListener("resize", function () {
+            if (window.innerWidth > 768) {
+              menu.classList.remove(
+                "hidden",
+                "flex",
+                "flex-col",
+                "items-center",
+                "justify-center",
+                "space-y-4"
+              );
+              menu.classList.add("md:flex", "md:items-center");
+              menuToggle.checked = false;
+            } else if (!menuToggle.checked) {
+              menu.classList.add("hidden");
+              menu.classList.remove(
+                "flex",
+                "flex-col",
+                "items-center",
+                "justify-center",
+                "space-y-4"
+              );
+            }
+          });
+
+          // Particle effect for hero section
+          function createParticle() {
+            const particles = document.getElementById("particles");
+            const particle = document.createElement("div");
+            particle.classList.add("particle");
+
+            const size = Math.random() * 5 + 2;
+            particle.style.width = `${size}px`;
+            particle.style.height = `${size}px`;
+
+            const x = Math.random() * window.innerWidth;
+            const y = window.innerHeight;
+            particle.style.left = `${x}px`;
+            particle.style.top = `${y}px`;
+
+            const hue = Math.random() * 360;
+            particle.style.backgroundColor = `hsl(${hue}, 100%, 50%)`;
+
+            const duration = Math.random() * 3 + 2;
+            particle.style.animation = `float-up ${duration}s linear`;
+
+          //  particles.appendChild(particle);
+
+            setTimeout(() => {
+              particle.remove();
+            }, duration * 1000);
+          }
+
+          setInterval(createParticle, 50);
+        </script>
+        <!----------------------------       script carouseel     ------------------>
+        <script>
+          $(document).ready(function () {
+            $(".your-slider").slick({
+              centerMode: true,
+              slidesToShow: 4,
+              autoplay: true,
+              autoplaySpeed: 2000,
+              arrows: false,
+              focusOnSelect: true,
+              responsive: [
+                {
+                  breakpoint: 768, // Moins de 768px, 1 slide
+                  settings: {
+                    slidesToShow: 1,
+                    centerMode: true,
+                  },
+                },
+                {
+                  breakpoint: 480, // Moins de 480px, 1 slide
+                  settings: {
+                    slidesToShow: 1,
+                    centerMode: true,
+                  },
+                },
+              ],
+            });
+          });
+        </script>
+        <!-- boostrap script -->
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+          crossorigin="anonymous"
+        ></script>
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
+        <style>
+          .slick-slide {
+            margin: 0 15px;
+          }
+          .slick-center .slick-slide {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+          }
+        </style>
+        <!-- Script Slick -->
+        <script>
+          $(document).ready(function () {
+            $(".your-slider").slick({
+              centerMode: true,
+              slidesToShow: 4,
+              autoplay: true,
+              autoplaySpeed: 800,
+              arrows: false,
+              focusOnSelect: true,
+              responsive: [
+                {
+                  breakpoint: 768, // Moins de 768px, 1 slide
+                  settings: {
+                    slidesToShow: 1,
+                    centerMode: true,
+                  },
+                },
+                {
+                  breakpoint: 480, // Moins de 480px, 1 slide
+                  settings: {
+                    slidesToShow: 1,
+                    centerMode: true,
+                  },
+                },
+              ],
+            });
+          });
+        </script>
+      </body>
+    </html>
+  </head>
+</html>

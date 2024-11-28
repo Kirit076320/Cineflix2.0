@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Découvrez CinéFlix, votre plateforme incontournable pour explorer un vaste choix de films. Profitez de critiques, recommandations et nouveautés chaque jour."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta property="og:title" content="Plateform de films" />
+    <meta property="og:description" content="Plateform de films en lignes" />
+    <meta property="og:url" content="https://michalsnik.github.io/aos/" />
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
+    <title>Cinéflix - Science-fictions</title>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+
+    <link rel="stylesheet" href="../css/fiction.css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oi&family=Orbitron:wght@400..900&family=Press+Start+2P&family=Questrial&family=Roboto+Slab:wght@100..900&family=Rubik+Glitch&family=Shrikhand&family=Teko:wght@300..700&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oi&family=Orbitron:wght@400..900&family=Press+Start+2P&family=Questrial&family=Roboto+Slab:wght@100..900&family=Rubik+Glitch&family=Rubik+Wet+Paint&family=Shrikhand&family=Teko:wght@300..700&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oi&family=Orbitron:wght@400..900&family=Pattaya&family=Press+Start+2P&family=Questrial&family=Roboto+Slab:wght@100..900&family=Rubik+Glitch&family=Rubik+Wet+Paint&family=Shrikhand&family=Teko:wght@300..700&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Modak&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oi&family=Orbitron:wght@400..900&family=Pattaya&family=Press+Start+2P&family=Questrial&family=Roboto+Slab:wght@100..900&family=Rubik+Glitch&family=Rubik+Wet+Paint&family=Shrikhand&family=Teko:wght@300..700&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Modak&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oi&family=Orbitron:wght@400..900&family=Pattaya&family=Press+Start+2P&family=Questrial&family=Roboto+Slab:wght@100..900&family=Rubik+Glitch&family=Rubik+Wet+Paint&family=Shrikhand&family=Teko:wght@300..700&display=swap");
+    </style>
+  </head>
+  <body>
+    <header id="tel">
+      <div>
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+
+        <label for="menu-toggle">
+          <img id="burger-menu" src="../img/burger-menu.svg" alt="Menu" />
+        </label>
+
+        <div id="bouton" class="menu">
+          <a href="#avantages">Avantages</a>
+          <a href="#film">Nos Films</a>
+          <a href="#abonnement">Abonnement</a>
+          <a href="#avis">Avis Clients</a>
+        </div>
+      </div>
+    </header>
+
+    <header id="pc">
+      <a href="../index.html">
+        <img id="logo" src="../img/logo-cinéflix.png" alt=""
+      /></a>
+      <nav>
+        <a href="#avantages">Avantages</a>
+        <a href="#film">Nos Films</a>
+        <a href="#abonnement">Abonnement</a>
+        <a href="#avis">Avis Clients</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero" id="hero">
+        <div>
+          <h1>Une étincelle suffit à déclencher l'infini</h1>
+
+          <p>
+            Embarquez pour un voyage de science-fiction au-delà des étoiles, où
+            chaque univers est une nouvelle aventure
+          </p>
+        </div>
+        <button><a href="#abonnement"> S'abonner</a></button>
+      </section>
+
+      <div class="finsection"></div>
+      <section class="avantages" id="avantages">
+        <div>
+          <h2>
+            Un site, des films, des nouveautés, pas de pub, 4k
+            <span>et tout ça dans un abonnement ?</span>
+          </h2>
+          <div class="avantage1">
+            <div>
+              <img src="../img/4k.png" alt="" />
+
+              <p>
+                Qualité HD, 4K,<span
+                  >avec ceci impossible de louper chaque détails.</span
+                >
+              </p>
+            </div>
+            <div>
+              <img src="../img/pop-corn.png" alt="" />
+              <p>
+                Un large catalogue de films,<span
+                  >de quoi ne pas s’ennuyer avant le prochain siècle.</span
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="avantage1">
+            <div>
+              <img src="../img/pas-de-publicite.png" alt="" />
+              <p>
+                Aucune pub <span>, profitez pleinement de votre moment.</span>
+              </p>
+            </div>
+            <div>
+              <img src="../img/ecran-de-cinema.png" alt="" />
+              <p>
+                Toute les nouveautés à porté de main
+                <span>, un vrai cinéma dans votre poche.</span>
+              </p>
+            </div>
+          </div>
+          <h2 class="manque , display">
+            Il ne manques plus que vous, qu’attendez vous ?
+          </h2>
+          <button><a href="#abonnement"> Rejoignez-nous</a></button>
+        </div>
+      </section>
+      <div class="finsection"></div>
+      <section class="film" id="film">
+        <h3>Nos Films Vedettes</h3>
+        <div class="carousel">
+          <div>
+            <img src="../img/avengers.jpg" alt="Image 1" />
+            <button class="carousel-btn">
+              <a
+                href="https://youtu.be/b-kTeJhHOhc?si=PDTl3AsPNThALzG1"
+                target="_blank"
+              >
+                En savoir plus</a
+              >
+            </button>
+          </div>
+          <div>
+            <img src="../img/inter.png" alt="Image 2" />
+            <button class="carousel-btn">
+              <a
+                href="https://youtu.be/HsPP6xSzQoE?si=0hRBb_cxL-JhHO0t"
+                target="_blank"
+              >
+                En savoir plus</a
+              >
+            </button>
+          </div>
+          <div>
+            <img src="../img/retour.jpg" alt="Image 3" />
+            <button class="carousel-btn">
+              <a
+                href="https://youtu.be/cU5BREZ9ke0?si=eMam_SbAxXOQT-lr"
+                target="_blank"
+              >
+                En savoir plus</a
+              >
+            </button>
+          </div>
+
+          <div>
+            <img src="../img/monde.jpg" alt="Image 3" />
+            <button class="carousel-btn">
+              <a
+                href="https://youtu.be/KyIlCbJfeyU?si=-xaqRHnkzP5hW83D"
+                target="_blank"
+              >
+                En savoir plus</a
+              >
+            </button>
+          </div>
+
+          <div>
+            <img src="../img/2012.jpg" alt="Image 3" />
+            <button class="carousel-btn">
+              <a
+                href="https://youtu.be/lriKn01qHPs?si=2ugyzGVgZjy7RV6f"
+                target="_blank"
+              >
+                En savoir plus</a
+              >
+            </button>
+          </div>
+
+          <div>
+            <img src="../img/avatar.jpg" alt="Image 3" />
+            <button class="carousel-btn">
+              <a
+                href="https://youtu.be/60ArLSCgjSU?si=EOuVtIRLniisuFAT"
+                target="_blank"
+              >
+                En savoir plus</a
+              >
+            </button>
+          </div>
+        </div>
+      </section>
+      <div class="finsection"></div>
+      <section id="abonnement" class="abonnement">
+        <h3>Nos Offres</h3>
+        <div id="les-offres">
+          <div class="offre" id="offre1">
+            <h4>Essentiel</h4>
+            <p>Qualité HD</p>
+            <p>1 écrans</p>
+            <p>Accès limité</p>
+            <p>9.99$/mois</p>
+            <button><a href="troll.html">Choisir cette offre</a></button>
+          </div>
+          <div class="offre" id="offre2">
+            <h4>Standard</h4>
+            <p>Qualité Full HD</p>
+            <p>2 écrans</p>
+            <p>Catalogue étendu</p>
+            <p>15.99$/mois</p>
+            <button><a href="troll.html">Choisir cette offre</a></button>
+          </div>
+          <div class="offre" id="offre3">
+            <h4>Premium</h4>
+            <p>Qualité 4K</p>
+            <p>4 écrans</p>
+            <p>Catalogue Complet</p>
+            <p>19.99$/mois</p>
+            <button><a href="troll.html">Choisir cette offre</a></button>
+          </div>
+        </div>
+      </section>
+      <div class="finsection"></div>
+      <section id="avis" class="avis">
+        <div id="client">
+          <h4 class="aviis">Avis Client</h4>
+
+          <div class="avisclient">
+            <h4>Paul</h4>
+            <p>
+              "Cinéflix offre un excellent choix de films et séries, mais je
+              trouve l’abonnement Essentiel un peu limité en termes de qualité
+              vidéo. Je vais probablement passer à l’option Standard pour
+              profiter de la Full HD. Sinon, le service est fluide et la
+              navigation facile."
+            </p>
+            <p>⭐️⭐️⭐️⭐️</p>
+          </div>
+          <div class="avisclient">
+            <h4>Jack</h4>
+            <p>
+              "Franchement, Cinéflix, c'est un peu comme mon pop-corn : parfois
+              ça croustille avec des bons films, parfois y'a des grains qui
+              passent pas... Mais hé, au moins, j'ai pas besoin de sortir de
+              chez moi pour râler sur les remakes !" 🍿😄
+            </p>
+            <p>⭐️⭐️⭐️⭐️⭐️</p>
+          </div>
+          <h4 class="aviis" style="font-size: 2em">
+            NOS CLIENTS NOUS FONT CONFIANCE !!
+          </h4>
+        </div>
+      </section>
+      <div class="finsection"></div>
+      <section class="genres">
+        <h4>Nos Autres Genres</h4>
+        <div id="flex3">
+          <button id="Romance"><a href="romance.html">Romance</a></button>
+          <button id="Horreur"><a href="horreur.html">Horreur</a></button>
+          <button id="Comedie"><a href="comedie.html">Comédie</a></button>
+          <button id="Fantaisie"><a href="fantaisie.html">Fantaisie</a></button>
+          <button id="Anime"><a href="anime.html">Animé</a></button>
+        </div>
+      </section>
+      <div class="finsection"></div>
+
+      <section class="benefice" style="padding-top: 5em">
+        <div>
+          <img src="../img/rond1.png" alt="" />
+          <h5>Visionnage multi-écrans</h5>
+          <p>
+            Regardez vos programmes préférés sur mobile, tablette, téléviseur ou
+            ordinateur. Avec les offres Standard et Premium, partagez votre
+            abonnement avec vos proches.
+          </p>
+        </div>
+        <div>
+          <img src="../img/rond2.png" alt="" />
+          <h5>Téléchargement hors ligne</h5>
+          <p>
+            Emportez vos films et séries partout ! Téléchargez vos contenus
+            préférés pour les regarder sans connexion Internet.
+          </p>
+        </div>
+        <div>
+          <img src="../img/rond3.png" alt="" />
+          <h5>Accès illimité au catalogue</h5>
+
+          <p>
+            Profitez de milliers de films, séries, et documentaires sans
+            restrictions, à tout moment. Que vous soyez fan de thrillers,
+            comédies ou science-fiction, il y a toujours quelque chose pour
+            vous.
+          </p>
+        </div>
+      </section>
+      <div class="finsection"></div>
+      <section id="plus">
+        <div class="plus">
+          <div>
+            <img id="image1" src="../img/planete.png" alt="" />
+          </div>
+          <div>
+            <p class="text-star">
+              Sur Cinéflix, nous avons rassemblé l'intégralité des films et
+              séries Star Wars pour offrir aux fans une expérience complète.
+            </p>
+
+            <p class="text-star2">
+              Plongez dans une galaxie lointaine, très lointaine, où la Force
+              guide des héros légendaires et des batailles épiques façonnent le
+              destin de l'univers.
+            </p>
+
+            <p class="text-star3">
+              Que vous soyez un Jedi expérimenté ou un novice prêt à découvrir
+              cet univers fascinant, notre plateforme est votre passerelle vers
+              l'émerveillement.
+            </p>
+          </div>
+        </div>
+        <div class="block">
+          <img id="stars-wars" src="../img/Star_Wars_Logo..png" alt="" />
+          <img id="stars-wars2" src="../img/filmstarwars.jpg" alt="" />
+          <img id="vaiseau1" src="../img/vaiseau-removebg-preview.png" alt="" />
+          <img id="vaiseau2" src="../img/fighter.png" alt="" />
+          <img id="explosion" src="../img/explosion.png" alt="" />
+          <img id="laser" src="../img/laser.png" alt="" />
+          <img id="laser2" src="../img/laser.png" alt="" />
+        </div>
+      </section>
+      <section id="plus2">
+        <div>
+          <img src="../img/Star_Wars_Logo..png" alt="" />
+          <p>
+            Sur Cinéflix, nous avons rassemblé l'intégralité des films et séries
+            Star Wars pour offrir aux fans une expérience complète.
+          </p>
+        </div>
+        <div>
+          <p>
+            Plongez dans une galaxie lointaine, très lointaine, où la Force
+            guide des héros légendaires et des batailles épiques façonnent le
+            destin de l'univers.
+          </p>
+          <img src="../img/vaiseau-removebg-preview.png" alt="" />
+        </div>
+
+        <div>
+          <img src="../img/planete.png" alt="" />
+
+          <p>
+            Que vous soyez un Jedi expérimenté ou un novice prêt à découvrir cet
+            univers fascinant, notre plateforme est votre passerelle vers
+            l'émerveillement.
+          </p>
+        </div>
+        <div>
+          <button id="star"><a href="">Rejoignez Notre univers </a></button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <img src="../img/logo-cinéflix.png" alt="" />
+        <p>ⓒ Cinélfix - tout droit réservé</p>
+      </div>
+      <div id="reseaux">
+        <a href="https://www.facebook.com/home.php">facebook</a>
+        <a href="https://www.instagram.com/">Instagram</a>
+        <a href="https://www.tiktok.com/discover?lang=fr">tiktok</a>
+        <a href="https://x.com/?lang=fr">Twitter</a>
+      </div>
+      <div>
+        <a href="horreur.html">Horreur</a>
+        <a href="comedie.html">Comédie</a>
+
+        <a href="fantaisie.html">Fantaisie</a>
+
+        <a href="anime.html">Animé</a>
+        <a href="romance.html">Romance</a>
+      </div>
+      <div>
+        <a href="#hero">Accueil</a>
+
+        <a href="#abonnement">Abonnement</a>
+        <a href="#film">Nos Films</a>
+
+        <a href="#avis">Avis</a>
+
+        <a href="mention.html">Mention Legal</a>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+    <script>
+      const audio = new Audio("../img/stars-wars.mp3"); // Remplacez par le chemin de votre fichier audio
+      audio.loop = true; // Activez la boucle si nécessaire
+
+      gsap.registerPlugin(ScrollTrigger);
+
+      ScrollTrigger.create({
+        trigger: "#image1",
+        start: "center center",
+        end: "+=3000px", // Reste fixé pendant 500 pixels
+        pin: true, // Fixe l'élément
+        scrub: true,
+        onEnter: () => {
+          audio.play(); // Démarre la musique lorsque l'animation commence
+        },
+      });
+
+      ScrollTrigger.create({
+        trigger: ".text-star",
+        start: "center center",
+
+        end: "+=1000px", // Reste fixé pendant 500 pixels
+        pin: true, // Fixe l'élément
+        scrub: true,
+      });
+
+      gsap.to(".text-star", {
+        scale: 1.2,
+        opacity: 1,
+        scrollTrigger: {
+          trigger: ".text-star",
+          start: "center center",
+          scrub: true,
+        },
+      });
+
+      gsap.to(".text-star", {
+        scale: 0.1,
+
+        scrollTrigger: {
+          trigger: ".text-star2",
+          start: "bottom bottom",
+          scrub: true,
+        },
+      });
+
+      ScrollTrigger.create({
+        trigger: ".text-star2",
+        start: "center center",
+        end: "+=1000px", // Reste fixé pendant 500 pixels
+        pin: true, // Fixe l'élément
+        scrub: true,
+      });
+      gsap.to(".text-star2", {
+        scale: 1.2,
+
+        opacity: 1,
+        scrollTrigger: {
+          trigger: ".text-star2",
+          start: "center center",
+          scrub: true,
+        },
+      });
+
+      gsap.to(".text-star2", {
+        scale: 0.1,
+
+        scrollTrigger: {
+          trigger: ".text-star3",
+          start: "bottom bottom",
+          scrub: true,
+        },
+      });
+
+      ScrollTrigger.create({
+        trigger: ".text-star3",
+        start: "center center",
+        end: "+=900px", // Reste fixé pendant 500 pixels
+        pin: true, // Fixe l'élément
+        scrub: true,
+      });
+      gsap.to(".text-star3", {
+        opacity: 1,
+        scrollTrigger: {
+          trigger: ".text-star3",
+          start: "center center",
+          scrub: true,
+        },
+      });
+
+      ScrollTrigger.create({
+        trigger: ".block",
+        start: "top top",
+        end: "+=500px", // Reste fixé pendant 500 pixels
+        pin: true, // Fixe l'élément
+        scrub: true,
+      });
+
+      gsap.to("#vaiseau1", {
+        x: 1700,
+        scrollTrigger: {
+          trigger: "#stars-wars",
+          start: "top top ",
+          scrub: true,
+        },
+      });
+
+      gsap.to("#vaiseau2", {
+        x: 2700,
+        scrollTrigger: {
+          trigger: "#stars-wars",
+          start: "top top",
+          scrub: true,
+        },
+      });
+
+      gsap.to("#laser", {
+        x: 2700,
+        scrollTrigger: {
+          trigger: "#stars-wars",
+          start: "top top ",
+          scrub: true,
+        },
+      });
+
+      gsap.to("#laser2", {
+        x: 4700,
+        scrollTrigger: {
+          trigger: "#stars-wars",
+          start: "top top",
+          scrub: true,
+        },
+      });
+      gsap.set("#explosion", {
+        opacity: 0,
+      });
+
+      ScrollTrigger.create({
+        trigger: "#vaiseau2",
+        start: "top top",
+        onEnter: () => {
+          gsap.set("#explosion", { opacity: 1 }); // Disparaît immédiatement
+          // Réapparaît après un délai de 3 secondes (par exemple)
+          gsap.delayedCall(0.5, () => gsap.set("#explosion", { opacity: 0 }));
+        },
+      });
+
+      gsap.set("#vaiseau1", {
+        opacity: 1,
+      });
+
+      ScrollTrigger.create({
+        trigger: "#vaiseau2",
+        start: "top top",
+        onEnter: () => {
+          gsap.set("#vaiseau1", { opacity: 0 }); // Disparaît immédiatement
+          // Réapparaît après un délai de 3 secondes (par exemple)
+          gsap.delayedCall(3, () => gsap.set("#vaiseau1", { opacity: 1 }));
+        },
+      });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".carousel").slick({
+          autoplay: true,
+          autoplaySpeed: 2000,
+          infinite: true, // Boucle infinie des slides
+          speed: 3000, // Vitesse de transition des slides
+          slidesToShow: 2, // Nombre de slides visibles
+          slidesToScroll: 1, // Nombre de slides défilant à la fois
+        });
+      });
+    </script>
+  </body>
+</html>
