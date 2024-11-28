@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /mentions
+
+Sitemap: https://www.cineflix.fr/sitemap.xml
