@@ -44,6 +44,7 @@ nav a {
   text-transform: uppercase;
   margin-right: 5em;
 }
+
 h1 {
   font-weight: 1000;
 
@@ -79,6 +80,7 @@ h3 {
   -webkit-text-stroke: 1.5px black;
 }
 .hero {
+  background-attachment: fixed;
   background-position: 50% 50%;
   text-align: center;
   height: 100vh;
@@ -633,6 +635,10 @@ div a {
   color: black;
   font-weight: 500;
 }
+
+form input {
+  width: 70%;
+}
 /**********************PC PORTABLE************/
 @media (max-width: 1400px) {
   #plus {
@@ -694,11 +700,15 @@ div a {
   span {
     display: none;
   }
+  div a {
+    color: white;
+  }
   #pc {
     display: none;
   }
   #tel {
     z-index: 10;
+    color: #ffffff;
 
     display: block;
     position: fixed;
@@ -780,9 +790,15 @@ div a {
     margin-left: 15%;
     width: 70%;
   }
+  form {
+    font-size: 0.5em;
+  }
 }
 /*********************TELEPHONE******************/
 @media (max-width: 550px) {
+  form input {
+    width: 100%;
+  }
   footer p {
     margin-top: 1em;
     color: black;
@@ -797,7 +813,7 @@ div a {
   div a {
     font-size: 0.5em;
     margin-top: 1em;
-    color: black;
+    color: white;
     font-weight: 500;
   }
   .benefice div {
@@ -828,5 +844,21 @@ div a {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
+  }
+  .hero {
+    background-image: url(../img/image-hero.jpg) !important;
+  }
+
+  section {
+    background-color: #000000 !important;
+    background-image: none !important;
+  }
+  .avisclient {
+    box-shadow: var(--primary) 0 0 10px;
+  }
+  .offre {
+    box-shadow: var(--primary) 0 0 10px !important;
+    background-color: rgba(172, 175, 140, 0.399) !important;
+    backdrop-filter: blur(10px);
   }
 }
